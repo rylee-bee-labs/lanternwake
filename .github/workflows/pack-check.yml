@@ -21,6 +21,11 @@ on:
 
 permissions:
   contents: read
+  # gitleaks-action lists the PR's commits via the API even with its
+  # comment/artifact posting disabled; contents:read alone 403s on a
+  # private repo ("Resource not accessible by integration"). Same grant
+  # the working cottage/portfolio secret-scan callers use.
+  pull-requests: write
 
 concurrency:
   group: pack-check-${{ github.ref }}
