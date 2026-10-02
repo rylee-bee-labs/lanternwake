@@ -203,3 +203,30 @@ wrong; the honest mechanics record for this game is
 `design/PLAYTEST-LOG.md`. The engine's keepers may want handbok to
 scope its journal by pack (and to never print another world's name
 into a pack's file - the neutrality guard's spirit).
+
+
+## Supersede notes (2026-10-02 — the upstream pass)
+
+VEFR's keepers ran a verification pass over this file's evidence
+(the matrix lives in the engine repo's `docs/research/
+2026-10-02-first-independent-pack.md`) and landed contract repairs.
+The workarounds ABOVE STAY AS HISTORY — they were true when written
+and the scars are the point — but note what superseded them:
+
+| Was | Status now |
+|---|---|
+| L4 `opens` never fires | **fixed upstream**: `opens` fires through the Interact path (chest = its book id, door = the place it opens into); the orphaned `useHere` was deleted |
+| L5 POI labels / distance 0 rejected | **fixed upstream**: one identity model — POI labels, book ids and enemy ids are declared things; distance is 0..9 (0 = standing on it). The phantom-item workaround below is no longer needed (it still validates — a name-only item is a legal thing — but new work should use the label directly) |
+| L16 `picks-up` only from floor drops | **fixed upstream**: every player acquisition (floor, chest, trade) fires `picks-up`; a rule's `give` stays silent |
+| L17 `uses-with` unreachable for quest tools | **fixed upstream**: item `keep: true` + a bare `use` (button appears, nothing spent); the Evercan could now be a `keep` tool if the pack ever rebuilds |
+| L18 doors need Interact, docs stale | **fixed upstream**: docs now say Interact |
+| L21 `handbok` read the wrong game's play | **fixed upstream**: pack-scoped, fails closed, cross-pack isolation pinned by a test |
+| L4b/L22 *(not in this file)* | the bake/engine rule-mirrors drifted (`takes` dropped silently) and `refresh_living_tree` broke journal writes on fresh worlds — both found during the upstream pass and fixed there |
+
+Remaining (no upstream change): L1 acts (ADR 0006), L2 one play
+surface (ADR 0006), L3 the 40-rule budget (ADR 0004 proposes
+scoped rules), L6 cosmetic verbs, L7 no NPC hand-over beyond
+`takes` + `comes-near`, L8 one shop per region, L10 cosmetic tide,
+L12 280-char say lines, L14 no live brain in that environment, L15
+static journals, L20 the twin ghost sprite, and P2 dialogue state
+(ADR 0005).

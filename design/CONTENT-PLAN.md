@@ -106,7 +106,7 @@ checks every placement (walkable `at`, real `speaker`, known `when`).
 | Landmark phantoms | 13 | name-only entries so POI rules validate |
 | Spare | 6 | — |
 
-## The enemies (~60 placements)
+## The enemies (44 placements)
 
 | Type | hp | atk | Where | Drops |
 |---|---|---|---|---|

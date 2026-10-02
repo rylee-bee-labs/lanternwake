@@ -64,7 +64,7 @@ on disk is generated and always re-validable.
 | Books | 50 |
 | Items | 25 real + 10 landmark names |
 | Rules | 40 (the whole reactive spine) |
-| Enemies | 33 across the coast and the deep road |
+| Enemies | 44 across the coast and the deep road |
 | Phases | the four watches: dusk, moonrise, deep-night, first-light |
 
 ## The documents
