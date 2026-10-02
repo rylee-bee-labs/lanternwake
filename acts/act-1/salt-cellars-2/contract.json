@@ -1,0 +1,116 @@
+{
+  "tile": 32,
+  "bg": "#0d0f12",
+  "hero_start": [
+    25,
+    15
+  ],
+  "legend": {
+    "#": {
+      "base": [
+        "#20242b"
+      ],
+      "solid": true,
+      "tile": "dungeon-wall"
+    },
+    ".": {
+      "base": [
+        "#1a1d22"
+      ],
+      "tile": "dungeon-floor"
+    },
+    "u": {
+      "base": [
+        "#2b2f38"
+      ],
+      "tile": "dungeon-stairs-up"
+    },
+    "d": {
+      "base": [
+        "#2b2f38"
+      ],
+      "tile": "dungeon-stairs-down"
+    }
+  },
+  "pois": {
+    "25,15": "the stair up"
+  },
+  "poi_text": {
+    "25,15": "Steps climb back toward the day."
+  },
+  "sanctuary_tiles": [],
+  "water_by_phase": {
+    "dusk": "low",
+    "moonrise": "low",
+    "deep-night": "high",
+    "first-light": "low"
+  },
+  "flood_tiles": [],
+  "watch": {},
+  "hero_color": "#e8e5df",
+  "speaker_color": "#8b939c",
+  "speaker_head": "#d8d5df",
+  "name": "Candle Vault",
+  "title": "Candle Vault",
+  "enemies": [
+    {
+      "id": "cellar2-mimic",
+      "name": "a mimic",
+      "at": [
+        14,
+        5
+      ],
+      "hp": 9,
+      "atk": 2,
+      "sprite": "mimic",
+      "drops": [
+        "amber-glass"
+      ]
+    },
+    {
+      "id": "cellar2-wight-1",
+      "name": "a salt-wight",
+      "at": [
+        7,
+        8
+      ],
+      "hp": 6,
+      "atk": 2,
+      "sprite": "salt-wight",
+      "drops": [
+        "gloam-glass"
+      ]
+    },
+    {
+      "id": "cellar2-wight-2",
+      "name": "a salt-wight",
+      "at": [
+        4,
+        11
+      ],
+      "hp": 6,
+      "atk": 2,
+      "sprite": "salt-wight",
+      "drops": [
+        "marsh-tea"
+      ]
+    },
+    {
+      "id": "cellar2-chorister",
+      "name": "a drowned chorister",
+      "at": [
+        14,
+        14
+      ],
+      "hp": 8,
+      "atk": 2,
+      "sprite": "drowned-chorister",
+      "drops": [
+        "rope-coil"
+      ]
+    }
+  ],
+  "fog": {
+    "radius": 4
+  }
+}

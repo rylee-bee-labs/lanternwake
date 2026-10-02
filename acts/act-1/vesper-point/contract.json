@@ -1,0 +1,160 @@
+{
+  "tile": 32,
+  "bg": "#12141c",
+  "hero_start": [
+    2,
+    14
+  ],
+  "hero_color": "#e8e5df",
+  "speaker_color": "#8b939c",
+  "speaker_head": "#d8d5df",
+  "legend": {
+    "#": {
+      "base": [
+        "#2c2f38"
+      ],
+      "solid": true,
+      "tile": "rock"
+    },
+    ",": {
+      "base": [
+        "#b9c4cf"
+      ],
+      "tile": "frost"
+    },
+    ".": {
+      "base": [
+        "#cfd6de"
+      ],
+      "tile": "snow"
+    },
+    "A": {
+      "base": [
+        "#5c4126"
+      ],
+      "solid": true,
+      "tile": "table"
+    },
+    "B": {
+      "base": [
+        "#4a3b2c"
+      ],
+      "solid": true,
+      "tile": "pine-bare"
+    },
+    "D": {
+      "base": [
+        "#7a5230"
+      ],
+      "tile": "door"
+    },
+    "H": {
+      "base": [
+        "#4c3a2c"
+      ],
+      "solid": true,
+      "tile": "bed"
+    },
+    "L": {
+      "base": [
+        "#7a5a2c"
+      ],
+      "tile": "lamp"
+    },
+    "T": {
+      "base": [
+        "#2c4a33"
+      ],
+      "solid": true,
+      "tile": "pine"
+    },
+    "W": {
+      "base": [
+        "#4a3826"
+      ],
+      "solid": true,
+      "tile": "window"
+    },
+    "X": {
+      "base": [
+        "#3a2b22"
+      ],
+      "solid": true,
+      "tile": "timber-wall"
+    },
+    "d": {
+      "base": [
+        "#242733"
+      ],
+      "tile": "dark-floor"
+    },
+    "f": {
+      "base": [
+        "#7a6a52"
+      ],
+      "tile": "flagstone"
+    },
+    "w": {
+      "base": [
+        "#5f3f31"
+      ],
+      "tile": "wood-floor"
+    },
+    "~": {
+      "base": [
+        "#1d2c40"
+      ],
+      "solid": true,
+      "tile": "sea"
+    }
+  },
+  "pois": {
+    "13,14": "the Beacon door"
+  },
+  "poi_text": {
+    "13,14": "The Beacon's iron door. Cold hinges. A house of light, waiting for one flame."
+  },
+  "sanctuary_tiles": [
+    "w"
+  ],
+  "water_by_phase": {
+    "dusk": "low",
+    "moonrise": "low",
+    "deep-night": "high",
+    "first-light": "low"
+  },
+  "flood_tiles": [],
+  "enemies": [
+    {
+      "id": "point-wisp-1",
+      "name": "a hush-wisp",
+      "at": [
+        20,
+        15
+      ],
+      "hp": 4,
+      "atk": 1,
+      "sprite": "hush-wisp",
+      "drops": [
+        "gloam-glass"
+      ]
+    },
+    {
+      "id": "point-wisp-2",
+      "name": "a hush-wisp",
+      "at": [
+        4,
+        15
+      ],
+      "hp": 4,
+      "atk": 1,
+      "sprite": "hush-wisp",
+      "drops": [
+        "amber-glass"
+      ]
+    }
+  ],
+  "fog": {
+    "radius": 5
+  }
+}

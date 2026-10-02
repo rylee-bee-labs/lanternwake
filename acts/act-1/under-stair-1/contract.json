@@ -1,0 +1,102 @@
+{
+  "tile": 32,
+  "bg": "#0d0f12",
+  "hero_start": [
+    6,
+    9
+  ],
+  "legend": {
+    "#": {
+      "base": [
+        "#20242b"
+      ],
+      "solid": true,
+      "tile": "dungeon-wall"
+    },
+    ".": {
+      "base": [
+        "#1a1d22"
+      ],
+      "tile": "dungeon-floor"
+    },
+    "u": {
+      "base": [
+        "#2b2f38"
+      ],
+      "tile": "dungeon-stairs-up"
+    },
+    "d": {
+      "base": [
+        "#2b2f38"
+      ],
+      "tile": "dungeon-stairs-down"
+    }
+  },
+  "pois": {
+    "6,9": "the stair up",
+    "24,12": "the stair down"
+  },
+  "poi_text": {
+    "6,9": "Steps climb back toward the day.",
+    "24,12": "Steps drop into the dark."
+  },
+  "sanctuary_tiles": [],
+  "water_by_phase": {
+    "dusk": "low",
+    "moonrise": "low",
+    "deep-night": "high",
+    "first-light": "low"
+  },
+  "flood_tiles": [],
+  "watch": {},
+  "hero_color": "#e8e5df",
+  "speaker_color": "#8b939c",
+  "speaker_head": "#d8d5df",
+  "name": "Salt Passage",
+  "title": "Salt Passage",
+  "enemies": [
+    {
+      "id": "stair1-sentinel-1",
+      "name": "a barrow-sentinel",
+      "at": [
+        23,
+        4
+      ],
+      "hp": 10,
+      "atk": 3,
+      "sprite": "barrow-sentinel",
+      "drops": [
+        "candle-box"
+      ]
+    },
+    {
+      "id": "stair1-sentinel-2",
+      "name": "a barrow-sentinel",
+      "at": [
+        26,
+        8
+      ],
+      "hp": 10,
+      "atk": 3,
+      "sprite": "barrow-sentinel",
+      "drops": [
+        "sea-salt"
+      ]
+    },
+    {
+      "id": "stair1-wisp",
+      "name": "a hush-wisp",
+      "at": [
+        18,
+        13
+      ],
+      "hp": 4,
+      "atk": 1,
+      "sprite": "hush-wisp",
+      "drops": []
+    }
+  ],
+  "fog": {
+    "radius": 4
+  }
+}

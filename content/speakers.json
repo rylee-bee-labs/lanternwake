@@ -1,0 +1,356 @@
+{
+  "marta": {
+    "name": "Marta Brine",
+    "region": "thornhollow",
+    "at": [5, 7],
+    "near": "the Brine & Wick",
+    "shop": true,
+    "strike": "The bell has been struck. Write what the Brine & Wick leaves behind: a kept seat, a plain supper, a room for whoever comes. Reply with only the JSON object.",
+    "seeds": {
+      "dusk": "Supper is on. The lamps are still out there, if you are the one who tends them.",
+      "moonrise": "The street goes silver and nobody knocks this late. Sit; the fire is yours.",
+      "deep-night": "Deep-night is for the desperate and the loved. You look like both.",
+      "first-light": "Grey on the water already. The bread is hot; eat before you walk."
+    }
+  },
+  "hobb": {
+    "name": "Hobb Ferrant",
+    "region": "thornhollow",
+    "at": [23, 6],
+    "near": "the forge",
+    "strike": "The bell has been struck. Write what the forge leaves behind: iron, heat, an old friend's promise. Reply with only the JSON object.",
+    "seeds": {
+      "dusk": "Iron keeps the day's heat a while yet. Like people.",
+      "moonrise": "Cold enough to make the anvil sing. I mend what the coast breaks.",
+      "deep-night": "The fire is the only clock I keep. It says: still night.",
+      "first-light": "I made the first lamp-hook the Guild ever issued. Yours should hang here when you are done."
+    }
+  },
+  "ilva": {
+    "name": "Sister Ilva",
+    "region": "thornhollow",
+    "at": [14, 13],
+    "near": "the candle-shrine",
+    "strike": "The bell has been struck. Write what the candle-shrine leaves behind: a small flame, a softer belief. Reply with only the JSON object.",
+    "seeds": {
+      "dusk": "Light one if you can spare it. The dark is polite, mostly.",
+      "moonrise": "I used to say the Hush was judgment. The candles never agreed with me.",
+      "deep-night": "The deep-night burns the shortest. Every candle here says the same thing.",
+      "first-light": "First light is the shrine's favourite hour. The flames look embarrassed."
+    }
+  },
+  "quill": {
+    "name": "Teodor Quill",
+    "region": "thornhollow",
+    "at": [17, 10],
+    "near": "the clerk's table",
+    "strike": "The bell has been struck. Write what the ledger clerk leaves behind: one honest page, a Guild rebuilt from paper. Reply with only the JSON object.",
+    "seeds": {
+      "dusk": "One page a day, ten years, and the Guild stands again. On paper. Paper first.",
+      "moonrise": "The moon is very good for reading by and terrible for accounts.",
+      "deep-night": "Even the ink sleeps at deep-night. I keep the pens warm.",
+      "first-light": "New day, new column. The coast is solvent again in principle."
+    }
+  },
+  "pip": {
+    "name": "Perrin Nix",
+    "region": "thornhollow",
+    "at": [16, 12],
+    "near": "the square",
+    "strike": "The bell has been struck. Write what the town's fastest runner leaves behind: news, noise, absolute faith. Reply with only the JSON object.",
+    "seeds": {
+      "dusk": "I ran the whole road twice today and the day is not even done!",
+      "moonrise": "Nobody needs anything at moonrise. It is very boring. Tell me something!",
+      "deep-night": "Deep-night is just the day hiding. I am not fooled.",
+      "first-light": "FIRST LIGHT! I already told four people and a gull!"
+    }
+  },
+  "serren": {
+    "name": "Old Serren",
+    "region": "thornhollow",
+    "at": [10, 13],
+    "near": "the old well",
+    "strike": "The bell has been struck. Write what the old tide-reader leaves behind: weather, patience, the sea's old manners. Reply with only the JSON object.",
+    "seeds": {
+      "dusk": "Sky says quiet. Water says later. The two of them never agree before supper.",
+      "moonrise": "Moon pulls the tide wide. Keep to the high road tonight.",
+      "deep-night": "High water at deep-night, like always. The causeway walks under it and remembers.",
+      "first-light": "Grey-gold on the sea. Good weather for walking and better for lamplighters."
+    }
+  },
+  "aisling": {
+    "name": "Aisling Marr",
+    "region": "thornhollow",
+    "at": [21, 11],
+    "near": "the net-mender's stall",
+    "strike": "The bell has been struck. Write what the net-mender leaves behind: mended things, a softened blame. Reply with only the JSON object.",
+    "seeds": {
+      "dusk": "A mended net is stronger where it broke. People less so.",
+      "moonrise": "I keep thinking the fire was someone's fault. It is easier that way. It may not be true.",
+      "deep-night": "My brother went into the dark and came back kind and empty. I mend. It is what is left.",
+      "first-light": "The light is honest in the morning. It makes me honest too, unhappily."
+    }
+  },
+  "vetch": {
+    "name": "Dr. Anselm Vetch",
+    "region": "thornhollow",
+    "at": [7, 9],
+    "near": "the physician's door",
+    "strike": "The bell has been struck. Write what the physician leaves behind: measurements, a corrected count, a quiet apology. Reply with only the JSON object.",
+    "seeds": {
+      "dusk": "Count the lamps, count the wounded, count the days. It is how I sleep.",
+      "moonrise": "Evidence or it is superstition. I have been wrong before. Spectacularly.",
+      "deep-night": "I do not sleep at deep-night. I count things until the count gets tired.",
+      "first-light": "Ten years ago I wrote 'the Master is dead' in a ledger. I would like to cross it out."
+    }
+  },
+  "holt": {
+    "name": "Reeve Garrick Holt",
+    "region": "thornhollow",
+    "at": [18, 10],
+    "near": "the reeve's stone",
+    "strike": "The bell has been struck. Write what the reeve leaves behind: a kept peace, a road opened, a fear put down. Reply with only the JSON object.",
+    "seeds": {
+      "dusk": "The town is quiet and quiet is safe. Mostly. Do not quote me.",
+      "moonrise": "I shut the road for ten years to keep this town safe. It is possible I overdid it.",
+      "deep-night": "Nothing stirs at deep-night. That is when I do my worrying.",
+      "first-light": "A reeve is only a person with a list and a lamp. Speaking of lamps..."
+    }
+  },
+  "moss": {
+    "name": "Moss",
+    "region": "thornhollow",
+    "at": [8, 5],
+    "near": "the inn hearth",
+    "strike": "The bell has been struck. Write what the inn's cat leaves behind: one warm sentence, absolutely no explanations. Reply with only the JSON object.",
+    "seeds": {
+      "dusk": "Mrrp.",
+      "moonrise": "Mrrp.",
+      "deep-night": "Mrrp.",
+      "first-light": "Mrrp."
+    }
+  },
+  "toll-yann": {
+    "name": "Toll-Yann",
+    "region": "the-causeway",
+    "at": [16, 9],
+    "near": "the toll booth",
+    "strike": "The bell has been struck. Write what the toll-keeper leaves behind: tin lanterns, a ledger of crossings, a belief let go. Reply with only the JSON object.",
+    "seeds": {
+      "dusk": "Crossing is free at dusk. At deep-night it costs you getting wet.",
+      "moonrise": "Tin lanterns up and down the road. Mine never go out. Stubbornness counts as oil.",
+      "deep-night": "The causeway is under the water now. Walk it anyway. The road knows where it is.",
+      "first-light": "I have crossed a thousand times and the sea has not taken me yet. Today looks promising too."
+    }
+  },
+  "ferry": {
+    "name": "Ferrylight Oku",
+    "region": "the-causeway",
+    "at": [19, 9],
+    "near": "the crossing",
+    "strike": "The bell has been struck. Write what the crossing boy leaves behind: a song, a pole, the bell under the water. Reply with only the JSON object.",
+    "seeds": {
+      "dusk": "I pole quiet at dusk so the water can talk.",
+      "moonrise": "The bell sings under the water tonight. It is not a sad song, whatever the priest says.",
+      "deep-night": "Everyone asks what the dark sounds like. Waves. Just waves. And the bell.",
+      "first-light": "First light is when the fish come up to look at the sky. I see them."
+    }
+  },
+  "wren": {
+    "name": "Wren Alder",
+    "region": "saltreach",
+    "at": [6, 8],
+    "near": "the first hut",
+    "strike": "The bell has been struck. Write what the elder ferry-twin leaves behind: marsh sense, faith in a living friend. Reply with only the JSON object.",
+    "seeds": {
+      "dusk": "Marsh at dusk: mind the pans, mind the quiet, mind your own feet.",
+      "moonrise": "Sable says the marsh is safe if you sing. Sable is half right. Sing anyway.",
+      "deep-night": "The Master went down there. I will keep saying it until someone believes me.",
+      "first-light": "The mist says what the night did. The mist says: nothing. Good."
+    }
+  },
+  "sable": {
+    "name": "Sable Alder",
+    "region": "saltreach",
+    "at": [14, 8],
+    "near": "the second hut",
+    "strike": "The bell has been struck. Write what the younger ferry-twin leaves behind: a song over bad ground, a marsh kept warm. Reply with only the JSON object.",
+    "seeds": {
+      "dusk": "Sing while you walk. The Hush hates a tune. Probably.",
+      "moonrise": "Wren says I sing too much. The pans say otherwise and I trust the pans.",
+      "deep-night": "At deep-night I sing louder. Somebody has to.",
+      "first-light": "The reeds go gold at first light. For about four minutes. It is worth being up."
+    }
+  },
+  "grandmother-ash": {
+    "name": "Grandmother Ash",
+    "region": "saltreach",
+    "at": [23, 8],
+    "near": "the third hut",
+    "strike": "The bell has been struck. Write what the marsh hermit leaves behind: the coast's memory, the truth in pieces. Reply with only the JSON object.",
+    "seeds": {
+      "dusk": "I have lived long enough to outlast two truths and one lie. The lie is winning.",
+      "moonrise": "Ask what happened to the bell. Ask Hobb. Ask anyone - just not the priest. Not yet.",
+      "deep-night": "The dark took my sister's name. She smiles at me now like a neighbour. I keep the name for her.",
+      "first-light": "The Master lives. Ten years of being laughed at and I am still right."
+    }
+  },
+  "orra": {
+    "name": "Captain Orra Vane",
+    "region": "gullwatch",
+    "at": [7, 5],
+    "near": "Vane's Chandlery",
+    "shop": true,
+    "strike": "The bell has been struck. Write what the chandler leaves behind: oil, rope, a brother forgiven. Reply with only the JSON object.",
+    "seeds": {
+      "dusk": "The chandlery keeps oil, rope and blunt opinions. All three are sound.",
+      "moonrise": "My brother is dead. I have said it so long it tastes like nothing. I would like it to be false.",
+      "deep-night": "A lightship never sleeps. I am retired. I never sleep. Same thing.",
+      "first-light": "Buy rope before you walk, lampwright. The sea eats rope the way the dark eats names."
+    }
+  },
+  "bett": {
+    "name": "Bett Vane",
+    "region": "gullwatch",
+    "at": [13, 14],
+    "near": "the corner house",
+    "strike": "The bell has been struck. Write what the would-be lampwright leaves behind: ambition, oil-stained hands, the Guild's future. Reply with only the JSON object.",
+    "seeds": {
+      "dusk": "I can splice a wick faster than anyone on this cliff. Prove me wrong. Please.",
+      "moonrise": "Aunt Orra says the Guild is over. Then I say 'wicks' and she stops talking.",
+      "deep-night": "I keep the practice lamps trimmed at deep-night. When the Guild comes back I will be ready.",
+      "first-light": "The cliff lamp is still lit. Good. That is my future burning nicely."
+    }
+  },
+  "drennan": {
+    "name": "Father Drennan",
+    "region": "gullwatch",
+    "at": [20, 5],
+    "near": "the chapel",
+    "strike": "The bell has been struck. Write what the priest leaves behind: a grief laid down, a bell mourned, a forgiveness beginning. Reply with only the JSON object.",
+    "seeds": {
+      "dusk": "The bell was holy and the sea has it. I have made my peace badly.",
+      "moonrise": "I say the Hush is judgment because the alternative is grief. I know how that sounds.",
+      "deep-night": "I pray at deep-night for my friend. Whichever one of them is still alive.",
+      "first-light": "Some mornings the light feels like an answer. Most mornings it is just weather."
+    }
+  },
+  "skua": {
+    "name": "Skua",
+    "region": "gullwatch",
+    "at": [8, 11],
+    "near": "the bird nets",
+    "strike": "The bell has been struck. Write what the bird-catcher leaves behind: gull-lore, a joke with weather in it. Reply with only the JSON object.",
+    "seeds": {
+      "dusk": "Gulls come in at dusk in threes. Never fours. Do not ask me why.",
+      "moonrise": "The gulls say the weald lamp is lit. Gulls do not lie. They have no reason to.",
+      "deep-night": "Nothing flies at deep-night except the Hush and it flies badly.",
+      "first-light": "The Master's name? The gulls know it. They just refuse to say it in mixed company."
+    }
+  },
+  "halloran": {
+    "name": "Halloran",
+    "region": "gullwatch",
+    "at": [20, 13],
+    "near": "the ropewalk",
+    "strike": "The bell has been struck. Write what the rope-maker leaves behind: one good coil, a sea fed. Reply with only the JSON object.",
+    "seeds": {
+      "dusk": "I make what the sea eats. Business is steady, which is a sad sentence.",
+      "moonrise": "Rope remembers being twisted. So do people. I try to twist gently.",
+      "deep-night": "No ropemaking at deep-night. The strands judge you.",
+      "first-light": "Take a coil. You will need it where you are going. Everyone needs it where they are going."
+    }
+  },
+  "bonepicker": {
+    "name": "The Bonepicker",
+    "region": "the-boneyard",
+    "at": [7, 12],
+    "near": "the camp",
+    "strike": "The bell has been struck. Write what the beachcomber leaves behind: names kept, the sea's returns. Reply with only the JSON object.",
+    "seeds": {
+      "dusk": "The sea gives back everything it takes. Bones, names, rope. Slowly. On its own terms.",
+      "moonrise": "I name the ribs. That one is Patience. The tall one is Regret. They like it.",
+      "deep-night": "The tide breathes in and out of the cave like something sleeping. I do not wake it.",
+      "first-light": "New shingle in the night. Someone's cargo. Someone's grief. I will name it by noon."
+    }
+  },
+  "edric": {
+    "name": "Edric Thorne",
+    "region": "the-weald",
+    "at": [7, 4],
+    "near": "the woodward's hut",
+    "strike": "The bell has been struck. Write what the woodward leaves behind: pines kept, a wood waking. Reply with only the JSON object.",
+    "seeds": {
+      "dusk": "The weald closes one eye at dusk. The other one stays open. Mind the other one.",
+      "moonrise": "The trees lean toward the lamp clearing. Trees do not lean for nothing.",
+      "deep-night": "The weald is waking up. I do not know into what. I keep the axe close and the lamp closer.",
+      "first-light": "Crows say the way is open to the barrow. Crows are great gossips and rarely wrong."
+    }
+  },
+  "barrow-keeper": {
+    "name": "The Barrow-keeper",
+    "region": "barrow-mouth",
+    "at": [22, 13],
+    "near": "the keeper's stone",
+    "strike": "The bell has been struck. Write what the barrow-keeper leaves behind: a rhyme, a road kept for the dead. Reply with only the JSON object.",
+    "seeds": {
+      "dusk": "Down is dark and down is long, but down is where the road was first.",
+      "moonrise": "The dead keep the road. They charge nothing and they complain less than the living.",
+      "deep-night": "Cold stone, warm candles. Someone keeps the deep road lit. It is not the dead.",
+      "first-light": "Up is morning and down is truth. Most days I would pick down."
+    }
+  },
+  "sef": {
+    "name": "Sef",
+    "region": "the-chapel",
+    "at": [8, 10],
+    "near": "the drowned nave",
+    "strike": "The bell has been struck. Write what the drowned chorister leaves behind: a song under water, a companion kept. Reply with only the JSON object.",
+    "seeds": {
+      "dusk": "I sing the bell a hymn at dusk. It remembers the words. I only remember the tune.",
+      "moonrise": "The sea stands in the aisles at moonrise. It is very polite about it.",
+      "deep-night": "The Warden walks at deep-night. He is so tired. Someone should tell him to sit.",
+      "first-light": "The light comes into the nave sideways, like an apology. I like it."
+    }
+  },
+  "osric": {
+    "name": "Osric Vane",
+    "region": "the-chapel",
+    "at": [6, 4],
+    "near": "the vestry",
+    "strike": "The bell has been struck. Write what the Warden leaves behind: a weight put down, a forgiveness not yet earned. Reply with only the JSON object.",
+    "seeds": {
+      "dusk": "I cut the bell down. I have said it every dusk for ten years to an empty nave.",
+      "moonrise": "The dark was supposed to scold me. It never did. That is worse.",
+      "deep-night": "My sister keeps the chandlery. My friend keeps the deep road. I keep nothing well.",
+      "first-light": "If the lamp were lit... no. It is not my light to ask for."
+    }
+  },
+  "corwin": {
+    "name": "The Nameless Keeper",
+    "region": "vesper-point",
+    "at": [12, 10],
+    "near": "the Beacon's foot",
+    "strike": "The bell has been struck. Write what the Master Lampwright leaves behind: a name returned, a road of candles. Reply with only the JSON object.",
+    "seeds": {
+      "dusk": "I keep the road lit in the dark. I do not know why. The candles seem to.",
+      "moonrise": "A name is a lamp too. I had one once, I think. It was warm.",
+      "deep-night": "Every night I light the dark and every night the dark forgets me. It is a fair trade.",
+      "first-light": "The Beacon knows me. I am beginning to think it always did."
+    }
+  },
+  "lise": {
+    "name": "Lise Alder",
+    "region": "vesper-point",
+    "at": [6, 10],
+    "near": "the keeper's house",
+    "shop": true,
+    "strike": "The bell has been struck. Write what the Beacon keeper leaves behind: a kettle on, a homecome. Reply with only the JSON object.",
+    "seeds": {
+      "dusk": "The house keeps the Beacon's tools and one extra cup. It has kept the cup ten years.",
+      "moonrise": "My nieces say the Master walks the deep road. I keep the cup out anyway.",
+      "deep-night": "From up here the dark looks like a sea and the lamps look like boats.",
+      "first-light": "The kettle is on. Whoever comes home today comes home to heat."
+    }
+  }
+}

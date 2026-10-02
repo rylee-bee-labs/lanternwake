@@ -1,0 +1,172 @@
+{
+  "tile": 32,
+  "bg": "#12141c",
+  "hero_start": [
+    15,
+    10
+  ],
+  "hero_color": "#e8e5df",
+  "speaker_color": "#8b939c",
+  "speaker_head": "#d8d5df",
+  "legend": {
+    "#": {
+      "base": [
+        "#2c2f38"
+      ],
+      "solid": true,
+      "tile": "rock"
+    },
+    ",": {
+      "base": [
+        "#b9c4cf"
+      ],
+      "tile": "frost"
+    },
+    "A": {
+      "base": [
+        "#5c4126"
+      ],
+      "solid": true,
+      "tile": "table"
+    },
+    "B": {
+      "base": [
+        "#4a3b2c"
+      ],
+      "solid": true,
+      "tile": "pine-bare"
+    },
+    "D": {
+      "base": [
+        "#7a5230"
+      ],
+      "tile": "door"
+    },
+    "L": {
+      "base": [
+        "#7a5a2c"
+      ],
+      "tile": "lamp"
+    },
+    "Q": {
+      "base": [
+        "#4c4238"
+      ],
+      "solid": true,
+      "tile": "bench"
+    },
+    "T": {
+      "base": [
+        "#2c4a33"
+      ],
+      "solid": true,
+      "tile": "pine"
+    },
+    "U": {
+      "base": [
+        "#42503c"
+      ],
+      "solid": true,
+      "tile": "bush"
+    },
+    "W": {
+      "base": [
+        "#4a3826"
+      ],
+      "solid": true,
+      "tile": "window"
+    },
+    "Y": {
+      "base": [
+        "#3d3a46"
+      ],
+      "solid": true,
+      "tile": "cabin-wall"
+    },
+    "g": {
+      "base": [
+        "#3f5c3a"
+      ],
+      "tile": "grass"
+    },
+    "p": {
+      "base": [
+        "#8f7346"
+      ],
+      "tile": "plank"
+    }
+  },
+  "pois": {
+    "21,14": "the unlit weald lamp"
+  },
+  "poi_text": {
+    "21,14": "The weald lamp on the ash stump, dark. The trees lean toward it."
+  },
+  "sanctuary_tiles": [],
+  "water_by_phase": {
+    "dusk": "low",
+    "moonrise": "low",
+    "deep-night": "high",
+    "first-light": "low"
+  },
+  "flood_tiles": [],
+  "enemies": [
+    {
+      "id": "husk-1",
+      "name": "a weald-husk",
+      "at": [
+        8,
+        8
+      ],
+      "hp": 7,
+      "atk": 2,
+      "sprite": "weald-husk",
+      "drops": [
+        "candle-box"
+      ]
+    },
+    {
+      "id": "husk-2",
+      "name": "a weald-husk",
+      "at": [
+        20,
+        8
+      ],
+      "hp": 7,
+      "atk": 2,
+      "sprite": "weald-husk",
+      "drops": []
+    },
+    {
+      "id": "husk-3",
+      "name": "a weald-husk",
+      "at": [
+        10,
+        14
+      ],
+      "hp": 7,
+      "atk": 2,
+      "sprite": "weald-husk",
+      "drops": [
+        "honey-biscuit"
+      ]
+    },
+    {
+      "id": "husk-4",
+      "name": "a weald-husk",
+      "at": [
+        22,
+        16
+      ],
+      "hp": 7,
+      "atk": 2,
+      "sprite": "weald-husk",
+      "drops": [
+        "rope-coil"
+      ]
+    }
+  ],
+  "fog": {
+    "radius": 5
+  }
+}

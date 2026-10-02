@@ -1,0 +1,225 @@
+{
+  "tile": 32,
+  "bg": "#12141c",
+  "hero_start": [
+    2,
+    7
+  ],
+  "hero_color": "#e8e5df",
+  "speaker_color": "#8b939c",
+  "speaker_head": "#d8d5df",
+  "legend": {
+    "#": {
+      "base": [
+        "#2c2f38"
+      ],
+      "solid": true,
+      "tile": "rock"
+    },
+    "B": {
+      "base": [
+        "#4a3b2c"
+      ],
+      "solid": true,
+      "tile": "pine-bare"
+    },
+    "D": {
+      "base": [
+        "#7a5230"
+      ],
+      "tile": "door"
+    },
+    "J": {
+      "base": [
+        "#6b5637"
+      ],
+      "tile": "bridge"
+    },
+    "K": {
+      "base": [
+        "#57482f"
+      ],
+      "solid": true,
+      "tile": "crate"
+    },
+    "L": {
+      "base": [
+        "#7a5a2c"
+      ],
+      "tile": "lamp"
+    },
+    "Q": {
+      "base": [
+        "#4c4238"
+      ],
+      "solid": true,
+      "tile": "bench"
+    },
+    "U": {
+      "base": [
+        "#42503c"
+      ],
+      "solid": true,
+      "tile": "bush"
+    },
+    "W": {
+      "base": [
+        "#4a3826"
+      ],
+      "solid": true,
+      "tile": "window"
+    },
+    "Y": {
+      "base": [
+        "#3d3a46"
+      ],
+      "solid": true,
+      "tile": "cabin-wall"
+    },
+    "_": {
+      "base": [
+        "#7d6a4c"
+      ],
+      "tile": "moor"
+    },
+    "n": {
+      "base": [
+        "#8a6f4d"
+      ],
+      "tile": "sand"
+    },
+    "p": {
+      "base": [
+        "#8f7346"
+      ],
+      "tile": "plank"
+    },
+    "s": {
+      "base": [
+        "#5c4630"
+      ],
+      "tile": "soil"
+    },
+    "~": {
+      "base": [
+        "#1d2c40"
+      ],
+      "solid": true,
+      "tile": "sea"
+    }
+  },
+  "pois": {
+    "15,16": "the unlit ferry lamp"
+  },
+  "poi_text": {
+    "15,16": "The ferry lamp, dark. Ferrylight sings to it when he poles past."
+  },
+  "sanctuary_tiles": [],
+  "water_by_phase": {
+    "dusk": "low",
+    "moonrise": "low",
+    "deep-night": "high",
+    "first-light": "low"
+  },
+  "flood_tiles": [
+    [
+      3,
+      12
+    ],
+    [
+      6,
+      12
+    ],
+    [
+      9,
+      12
+    ],
+    [
+      12,
+      12
+    ],
+    [
+      15,
+      12
+    ],
+    [
+      18,
+      12
+    ],
+    [
+      21,
+      12
+    ],
+    [
+      24,
+      12
+    ],
+    [
+      3,
+      15
+    ],
+    [
+      6,
+      15
+    ],
+    [
+      9,
+      15
+    ],
+    [
+      21,
+      15
+    ],
+    [
+      24,
+      15
+    ]
+  ],
+  "enemies": [
+    {
+      "id": "marsh-wight-1",
+      "name": "a salt-wight",
+      "at": [
+        8,
+        13
+      ],
+      "hp": 6,
+      "atk": 2,
+      "sprite": "salt-wight",
+      "drops": [
+        "gloam-glass"
+      ]
+    },
+    {
+      "id": "marsh-wight-2",
+      "name": "a salt-wight",
+      "at": [
+        20,
+        13
+      ],
+      "hp": 6,
+      "atk": 2,
+      "sprite": "salt-wight",
+      "drops": [
+        "sea-salt"
+      ]
+    },
+    {
+      "id": "marsh-wight-3",
+      "name": "a salt-wight",
+      "at": [
+        5,
+        3
+      ],
+      "hp": 6,
+      "atk": 2,
+      "sprite": "salt-wight",
+      "drops": [
+        "marsh-tea"
+      ]
+    }
+  ],
+  "fog": {
+    "radius": 5
+  }
+}

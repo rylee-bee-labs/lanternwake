@@ -1,0 +1,258 @@
+{
+  "tile": 32,
+  "bg": "#12141c",
+  "hero_start": [
+    2,
+    10
+  ],
+  "hero_color": "#e8e5df",
+  "speaker_color": "#8b939c",
+  "speaker_head": "#d8d5df",
+  "legend": {
+    "#": {
+      "base": [
+        "#2c2f38"
+      ],
+      "solid": true,
+      "tile": "rock"
+    },
+    "D": {
+      "base": [
+        "#7a5230"
+      ],
+      "tile": "door"
+    },
+    "K": {
+      "base": [
+        "#57482f"
+      ],
+      "solid": true,
+      "tile": "crate"
+    },
+    "M": {
+      "base": [
+        "#565660"
+      ],
+      "solid": true,
+      "tile": "grave"
+    },
+    "O": {
+      "base": [
+        "#4c4436"
+      ],
+      "solid": true,
+      "tile": "barrel"
+    },
+    "Q": {
+      "base": [
+        "#4c4238"
+      ],
+      "solid": true,
+      "tile": "bench"
+    },
+    "U": {
+      "base": [
+        "#42503c"
+      ],
+      "solid": true,
+      "tile": "bush"
+    },
+    "d": {
+      "base": [
+        "#242733"
+      ],
+      "tile": "dark-floor"
+    },
+    "h": {
+      "base": [
+        "#4a4238"
+      ],
+      "tile": "shingle"
+    },
+    "n": {
+      "base": [
+        "#8a6f4d"
+      ],
+      "tile": "sand"
+    },
+    "~": {
+      "base": [
+        "#1d2c40"
+      ],
+      "solid": true,
+      "tile": "sea"
+    }
+  },
+  "pois": {
+    "26,12": "the sea-cave mouth",
+    "10,9": "the whale fall"
+  },
+  "poi_text": {
+    "26,12": "A cave mouth in the shingle. The tide breathes in and out of it.",
+    "10,9": "The ribs of a whale the sea gave back. The bonepicker keeps the names."
+  },
+  "sanctuary_tiles": [
+    "d"
+  ],
+  "water_by_phase": {
+    "dusk": "low",
+    "moonrise": "low",
+    "deep-night": "high",
+    "first-light": "low"
+  },
+  "flood_tiles": [
+    [
+      2,
+      1
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      8,
+      1
+    ],
+    [
+      11,
+      1
+    ],
+    [
+      14,
+      1
+    ],
+    [
+      17,
+      1
+    ],
+    [
+      20,
+      1
+    ],
+    [
+      23,
+      1
+    ],
+    [
+      26,
+      1
+    ],
+    [
+      29,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      7,
+      2
+    ],
+    [
+      10,
+      2
+    ],
+    [
+      13,
+      2
+    ],
+    [
+      19,
+      2
+    ],
+    [
+      22,
+      2
+    ],
+    [
+      25,
+      2
+    ],
+    [
+      28,
+      2
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      6,
+      3
+    ],
+    [
+      9,
+      3
+    ],
+    [
+      12,
+      3
+    ],
+    [
+      15,
+      3
+    ]
+  ],
+  "enemies": [
+    {
+      "id": "cliff-crab-1",
+      "name": "a cliff-crab",
+      "at": [
+        4,
+        8
+      ],
+      "hp": 4,
+      "atk": 1,
+      "sprite": "cliff-crab",
+      "drops": []
+    },
+    {
+      "id": "cliff-crab-2",
+      "name": "a cliff-crab",
+      "at": [
+        26,
+        9
+      ],
+      "hp": 4,
+      "atk": 1,
+      "sprite": "cliff-crab",
+      "drops": [
+        "sea-salt"
+      ]
+    },
+    {
+      "id": "cliff-crab-3",
+      "name": "a cliff-crab",
+      "at": [
+        12,
+        8
+      ],
+      "hp": 4,
+      "atk": 1,
+      "sprite": "cliff-crab",
+      "drops": []
+    },
+    {
+      "id": "beach-wisp",
+      "name": "a hush-wisp",
+      "at": [
+        20,
+        10
+      ],
+      "hp": 4,
+      "atk": 1,
+      "sprite": "hush-wisp",
+      "drops": [
+        "gloam-glass"
+      ]
+    }
+  ],
+  "fog": {
+    "radius": 5
+  }
+}

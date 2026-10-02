@@ -1,0 +1,14 @@
+######################
+#dddddddddddddddddddd#
+#dwwwwwwdddKddddddddd#
+#dwwAwwwddKddddddddOd#
+#dwwwwwwdPdddddOddddd#
+#dwwwwwwddddddddddddd#
+#dddOdddddddddddddddd#
+#dddKdddddddddddddddd#
+#dddddddddddddddddddd#
+#Kddddddddddddddddddd#
+#dddddddddddddddddddd#
+#dddddddddddddOdddDdd#
+#dddddddddddddddddddO#
+######################

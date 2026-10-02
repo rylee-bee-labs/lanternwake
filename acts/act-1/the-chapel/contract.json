@@ -1,0 +1,260 @@
+{
+  "tile": 32,
+  "bg": "#12141c",
+  "hero_start": [
+    28,
+    6
+  ],
+  "hero_color": "#e8e5df",
+  "speaker_color": "#8b939c",
+  "speaker_head": "#d8d5df",
+  "legend": {
+    "#": {
+      "base": [
+        "#2c2f38"
+      ],
+      "solid": true,
+      "tile": "rock"
+    },
+    "D": {
+      "base": [
+        "#7a5230"
+      ],
+      "tile": "door"
+    },
+    "L": {
+      "base": [
+        "#7a5a2c"
+      ],
+      "tile": "lamp"
+    },
+    "M": {
+      "base": [
+        "#565660"
+      ],
+      "solid": true,
+      "tile": "grave"
+    },
+    "P": {
+      "base": [
+        "#54401f"
+      ],
+      "solid": true,
+      "tile": "shelf"
+    },
+    "V": {
+      "base": [
+        "#7a7a84"
+      ],
+      "solid": true,
+      "tile": "statue"
+    },
+    "Z": {
+      "base": [
+        "#232735"
+      ],
+      "solid": true,
+      "tile": "dark-wall"
+    },
+    "d": {
+      "base": [
+        "#242733"
+      ],
+      "tile": "dark-floor"
+    },
+    "f": {
+      "base": [
+        "#7a6a52"
+      ],
+      "tile": "flagstone"
+    },
+    "i": {
+      "base": [
+        "#2b3a4c"
+      ],
+      "tile": "ice"
+    },
+    "~": {
+      "base": [
+        "#1d2c40"
+      ],
+      "solid": true,
+      "tile": "sea"
+    }
+  },
+  "pois": {
+    "15,5": "the unlit chapel lamp"
+  },
+  "poi_text": {
+    "15,5": "The chapel lamp in the drowned nave, dark. The sea stands in the aisles."
+  },
+  "sanctuary_tiles": [
+    "f"
+  ],
+  "water_by_phase": {
+    "dusk": "low",
+    "moonrise": "low",
+    "deep-night": "high",
+    "first-light": "low"
+  },
+  "flood_tiles": [
+    [
+      3,
+      12
+    ],
+    [
+      6,
+      12
+    ],
+    [
+      9,
+      12
+    ],
+    [
+      12,
+      12
+    ],
+    [
+      15,
+      12
+    ],
+    [
+      18,
+      12
+    ],
+    [
+      21,
+      12
+    ],
+    [
+      24,
+      12
+    ],
+    [
+      5,
+      13
+    ],
+    [
+      8,
+      13
+    ],
+    [
+      11,
+      13
+    ],
+    [
+      14,
+      13
+    ],
+    [
+      17,
+      13
+    ],
+    [
+      20,
+      13
+    ],
+    [
+      23,
+      13
+    ],
+    [
+      26,
+      13
+    ],
+    [
+      4,
+      14
+    ],
+    [
+      7,
+      14
+    ],
+    [
+      10,
+      14
+    ],
+    [
+      13,
+      14
+    ],
+    [
+      16,
+      14
+    ],
+    [
+      19,
+      14
+    ],
+    [
+      22,
+      14
+    ],
+    [
+      25,
+      14
+    ]
+  ],
+  "enemies": [
+    {
+      "id": "chorister-1",
+      "name": "a drowned chorister",
+      "at": [
+        22,
+        8
+      ],
+      "hp": 8,
+      "atk": 2,
+      "sprite": "drowned-chorister",
+      "drops": [
+        "rope-coil"
+      ]
+    },
+    {
+      "id": "chorister-2",
+      "name": "a drowned chorister",
+      "at": [
+        24,
+        11
+      ],
+      "hp": 8,
+      "atk": 2,
+      "sprite": "drowned-chorister",
+      "drops": [
+        "sea-salt"
+      ]
+    },
+    {
+      "id": "nave-wisp",
+      "name": "a hush-wisp",
+      "at": [
+        10,
+        10
+      ],
+      "hp": 4,
+      "atk": 1,
+      "sprite": "hush-wisp",
+      "drops": [
+        "gloam-glass"
+      ]
+    },
+    {
+      "id": "the-drowned-warden",
+      "name": "the drowned Warden",
+      "at": [
+        18,
+        8
+      ],
+      "hp": 18,
+      "atk": 3,
+      "sprite": "the-drowned-warden",
+      "drops": [
+        "the-wardens-seal"
+      ],
+      "sight": 8
+    }
+  ],
+  "fog": {
+    "radius": 5
+  }
+}

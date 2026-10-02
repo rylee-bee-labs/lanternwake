@@ -1,0 +1,835 @@
+{
+  "id": "act-1",
+  "title": "Lanternwake",
+  "regions": [
+    "thornhollow",
+    "the-cellars",
+    "the-causeway",
+    "saltreach",
+    "the-boneyard",
+    "gullwatch",
+    "the-weald",
+    "barrow-mouth",
+    "the-chapel",
+    "vesper-point",
+    "under-stair-1",
+    "under-stair-2",
+    "under-stair-3",
+    "salt-cellars-1",
+    "salt-cellars-2"
+  ],
+  "speakers": {
+    "marta": {
+      "name": "Marta Brine",
+      "at": [
+        5,
+        7
+      ],
+      "near": "the Brine & Wick",
+      "voice_file": "voices/marta.md",
+      "region": "thornhollow",
+      "seeds": {
+        "dusk": "Supper is on. The lamps are still out there, if you are the one who tends them.",
+        "moonrise": "The street goes silver and nobody knocks this late. Sit; the fire is yours.",
+        "deep-night": "Deep-night is for the desperate and the loved. You look like both.",
+        "first-light": "Grey on the water already. The bread is hot; eat before you walk."
+      },
+      "shop": "true"
+    },
+    "hobb": {
+      "name": "Hobb Ferrant",
+      "at": [
+        23,
+        6
+      ],
+      "near": "the forge",
+      "voice_file": "voices/hobb.md",
+      "region": "thornhollow",
+      "seeds": {
+        "dusk": "Iron keeps the day's heat a while yet. Like people.",
+        "moonrise": "Cold enough to make the anvil sing. I mend what the coast breaks.",
+        "deep-night": "The fire is the only clock I keep. It says: still night.",
+        "first-light": "I made the first lamp-hook the Guild ever issued. Yours should hang here when you are done."
+      }
+    },
+    "ilva": {
+      "name": "Sister Ilva",
+      "at": [
+        14,
+        13
+      ],
+      "near": "the candle-shrine",
+      "voice_file": "voices/ilva.md",
+      "region": "thornhollow",
+      "seeds": {
+        "dusk": "Light one if you can spare it. The dark is polite, mostly.",
+        "moonrise": "I used to say the Hush was judgment. The candles never agreed with me.",
+        "deep-night": "The deep-night burns the shortest. Every candle here says the same thing.",
+        "first-light": "First light is the shrine's favourite hour. The flames look embarrassed."
+      }
+    },
+    "quill": {
+      "name": "Teodor Quill",
+      "at": [
+        17,
+        10
+      ],
+      "near": "the clerk's table",
+      "voice_file": "voices/quill.md",
+      "region": "thornhollow",
+      "seeds": {
+        "dusk": "One page a day, ten years, and the Guild stands again. On paper. Paper first.",
+        "moonrise": "The moon is very good for reading by and terrible for accounts.",
+        "deep-night": "Even the ink sleeps at deep-night. I keep the pens warm.",
+        "first-light": "New day, new column. The coast is solvent again in principle."
+      }
+    },
+    "pip": {
+      "name": "Perrin Nix",
+      "at": [
+        16,
+        12
+      ],
+      "near": "the square",
+      "voice_file": "voices/pip.md",
+      "region": "thornhollow",
+      "seeds": {
+        "dusk": "I ran the whole road twice today and the day is not even done!",
+        "moonrise": "Nobody needs anything at moonrise. It is very boring. Tell me something!",
+        "deep-night": "Deep-night is just the day hiding. I am not fooled.",
+        "first-light": "FIRST LIGHT! I already told four people and a gull!"
+      }
+    },
+    "serren": {
+      "name": "Old Serren",
+      "at": [
+        10,
+        13
+      ],
+      "near": "the old well",
+      "voice_file": "voices/serren.md",
+      "region": "thornhollow",
+      "seeds": {
+        "dusk": "Sky says quiet. Water says later. The two of them never agree before supper.",
+        "moonrise": "Moon pulls the tide wide. Keep to the high road tonight.",
+        "deep-night": "High water at deep-night, like always. The causeway walks under it and remembers.",
+        "first-light": "Grey-gold on the sea. Good weather for walking and better for lamplighters."
+      }
+    },
+    "aisling": {
+      "name": "Aisling Marr",
+      "at": [
+        21,
+        11
+      ],
+      "near": "the net-mender's stall",
+      "voice_file": "voices/aisling.md",
+      "region": "thornhollow",
+      "seeds": {
+        "dusk": "A mended net is stronger where it broke. People less so.",
+        "moonrise": "I keep thinking the fire was someone's fault. It is easier that way. It may not be true.",
+        "deep-night": "My brother went into the dark and came back kind and empty. I mend. It is what is left.",
+        "first-light": "The light is honest in the morning. It makes me honest too, unhappily."
+      }
+    },
+    "vetch": {
+      "name": "Dr. Anselm Vetch",
+      "at": [
+        7,
+        9
+      ],
+      "near": "the physician's door",
+      "voice_file": "voices/vetch.md",
+      "region": "thornhollow",
+      "seeds": {
+        "dusk": "Count the lamps, count the wounded, count the days. It is how I sleep.",
+        "moonrise": "Evidence or it is superstition. I have been wrong before. Spectacularly.",
+        "deep-night": "I do not sleep at deep-night. I count things until the count gets tired.",
+        "first-light": "Ten years ago I wrote 'the Master is dead' in a ledger. I would like to cross it out."
+      }
+    },
+    "holt": {
+      "name": "Reeve Garrick Holt",
+      "at": [
+        18,
+        10
+      ],
+      "near": "the reeve's stone",
+      "voice_file": "voices/holt.md",
+      "region": "thornhollow",
+      "seeds": {
+        "dusk": "The town is quiet and quiet is safe. Mostly. Do not quote me.",
+        "moonrise": "I shut the road for ten years to keep this town safe. It is possible I overdid it.",
+        "deep-night": "Nothing stirs at deep-night. That is when I do my worrying.",
+        "first-light": "A reeve is only a person with a list and a lamp. Speaking of lamps..."
+      }
+    },
+    "moss": {
+      "name": "Moss",
+      "at": [
+        8,
+        5
+      ],
+      "near": "the inn hearth",
+      "voice_file": "voices/moss.md",
+      "region": "thornhollow",
+      "seeds": {
+        "dusk": "Mrrp.",
+        "moonrise": "Mrrp.",
+        "deep-night": "Mrrp.",
+        "first-light": "Mrrp."
+      }
+    },
+    "toll-yann": {
+      "name": "Toll-Yann",
+      "at": [
+        16,
+        9
+      ],
+      "near": "the toll booth",
+      "voice_file": "voices/toll-yann.md",
+      "region": "the-causeway",
+      "seeds": {
+        "dusk": "Crossing is free at dusk. At deep-night it costs you getting wet.",
+        "moonrise": "Tin lanterns up and down the road. Mine never go out. Stubbornness counts as oil.",
+        "deep-night": "The causeway is under the water now. Walk it anyway. The road knows where it is.",
+        "first-light": "I have crossed a thousand times and the sea has not taken me yet. Today looks promising too."
+      }
+    },
+    "ferry": {
+      "name": "Ferrylight Oku",
+      "at": [
+        19,
+        9
+      ],
+      "near": "the crossing",
+      "voice_file": "voices/ferry.md",
+      "region": "the-causeway",
+      "seeds": {
+        "dusk": "I pole quiet at dusk so the water can talk.",
+        "moonrise": "The bell sings under the water tonight. It is not a sad song, whatever the priest says.",
+        "deep-night": "Everyone asks what the dark sounds like. Waves. Just waves. And the bell.",
+        "first-light": "First light is when the fish come up to look at the sky. I see them."
+      }
+    },
+    "wren": {
+      "name": "Wren Alder",
+      "at": [
+        6,
+        8
+      ],
+      "near": "the first hut",
+      "voice_file": "voices/wren.md",
+      "region": "saltreach",
+      "seeds": {
+        "dusk": "Marsh at dusk: mind the pans, mind the quiet, mind your own feet.",
+        "moonrise": "Sable says the marsh is safe if you sing. Sable is half right. Sing anyway.",
+        "deep-night": "The Master went down there. I will keep saying it until someone believes me.",
+        "first-light": "The mist says what the night did. The mist says: nothing. Good."
+      }
+    },
+    "sable": {
+      "name": "Sable Alder",
+      "at": [
+        14,
+        8
+      ],
+      "near": "the second hut",
+      "voice_file": "voices/sable.md",
+      "region": "saltreach",
+      "seeds": {
+        "dusk": "Sing while you walk. The Hush hates a tune. Probably.",
+        "moonrise": "Wren says I sing too much. The pans say otherwise and I trust the pans.",
+        "deep-night": "At deep-night I sing louder. Somebody has to.",
+        "first-light": "The reeds go gold at first light. For about four minutes. It is worth being up."
+      }
+    },
+    "grandmother-ash": {
+      "name": "Grandmother Ash",
+      "at": [
+        23,
+        8
+      ],
+      "near": "the third hut",
+      "voice_file": "voices/grandmother-ash.md",
+      "region": "saltreach",
+      "seeds": {
+        "dusk": "I have lived long enough to outlast two truths and one lie. The lie is winning.",
+        "moonrise": "Ask what happened to the bell. Ask Hobb. Ask anyone - just not the priest. Not yet.",
+        "deep-night": "The dark took my sister's name. She smiles at me now like a neighbour. I keep the name for her.",
+        "first-light": "The Master lives. Ten years of being laughed at and I am still right."
+      }
+    },
+    "orra": {
+      "name": "Captain Orra Vane",
+      "at": [
+        7,
+        5
+      ],
+      "near": "Vane's Chandlery",
+      "voice_file": "voices/orra.md",
+      "region": "gullwatch",
+      "seeds": {
+        "dusk": "The chandlery keeps oil, rope and blunt opinions. All three are sound.",
+        "moonrise": "My brother is dead. I have said it so long it tastes like nothing. I would like it to be false.",
+        "deep-night": "A lightship never sleeps. I am retired. I never sleep. Same thing.",
+        "first-light": "Buy rope before you walk, lampwright. The sea eats rope the way the dark eats names."
+      },
+      "shop": "true"
+    },
+    "bett": {
+      "name": "Bett Vane",
+      "at": [
+        13,
+        14
+      ],
+      "near": "the corner house",
+      "voice_file": "voices/bett.md",
+      "region": "gullwatch",
+      "seeds": {
+        "dusk": "I can splice a wick faster than anyone on this cliff. Prove me wrong. Please.",
+        "moonrise": "Aunt Orra says the Guild is over. Then I say 'wicks' and she stops talking.",
+        "deep-night": "I keep the practice lamps trimmed at deep-night. When the Guild comes back I will be ready.",
+        "first-light": "The cliff lamp is still lit. Good. That is my future burning nicely."
+      }
+    },
+    "drennan": {
+      "name": "Father Drennan",
+      "at": [
+        20,
+        5
+      ],
+      "near": "the chapel",
+      "voice_file": "voices/drennan.md",
+      "region": "gullwatch",
+      "seeds": {
+        "dusk": "The bell was holy and the sea has it. I have made my peace badly.",
+        "moonrise": "I say the Hush is judgment because the alternative is grief. I know how that sounds.",
+        "deep-night": "I pray at deep-night for my friend. Whichever one of them is still alive.",
+        "first-light": "Some mornings the light feels like an answer. Most mornings it is just weather."
+      }
+    },
+    "skua": {
+      "name": "Skua",
+      "at": [
+        8,
+        11
+      ],
+      "near": "the bird nets",
+      "voice_file": "voices/skua.md",
+      "region": "gullwatch",
+      "seeds": {
+        "dusk": "Gulls come in at dusk in threes. Never fours. Do not ask me why.",
+        "moonrise": "The gulls say the weald lamp is lit. Gulls do not lie. They have no reason to.",
+        "deep-night": "Nothing flies at deep-night except the Hush and it flies badly.",
+        "first-light": "The Master's name? The gulls know it. They just refuse to say it in mixed company."
+      }
+    },
+    "halloran": {
+      "name": "Halloran",
+      "at": [
+        20,
+        13
+      ],
+      "near": "the ropewalk",
+      "voice_file": "voices/halloran.md",
+      "region": "gullwatch",
+      "seeds": {
+        "dusk": "I make what the sea eats. Business is steady, which is a sad sentence.",
+        "moonrise": "Rope remembers being twisted. So do people. I try to twist gently.",
+        "deep-night": "No ropemaking at deep-night. The strands judge you.",
+        "first-light": "Take a coil. You will need it where you are going. Everyone needs it where they are going."
+      }
+    },
+    "bonepicker": {
+      "name": "The Bonepicker",
+      "at": [
+        7,
+        12
+      ],
+      "near": "the camp",
+      "voice_file": "voices/bonepicker.md",
+      "region": "the-boneyard",
+      "seeds": {
+        "dusk": "The sea gives back everything it takes. Bones, names, rope. Slowly. On its own terms.",
+        "moonrise": "I name the ribs. That one is Patience. The tall one is Regret. They like it.",
+        "deep-night": "The tide breathes in and out of the cave like something sleeping. I do not wake it.",
+        "first-light": "New shingle in the night. Someone's cargo. Someone's grief. I will name it by noon."
+      }
+    },
+    "edric": {
+      "name": "Edric Thorne",
+      "at": [
+        7,
+        4
+      ],
+      "near": "the woodward's hut",
+      "voice_file": "voices/edric.md",
+      "region": "the-weald",
+      "seeds": {
+        "dusk": "The weald closes one eye at dusk. The other one stays open. Mind the other one.",
+        "moonrise": "The trees lean toward the lamp clearing. Trees do not lean for nothing.",
+        "deep-night": "The weald is waking up. I do not know into what. I keep the axe close and the lamp closer.",
+        "first-light": "Crows say the way is open to the barrow. Crows are great gossips and rarely wrong."
+      }
+    },
+    "barrow-keeper": {
+      "name": "The Barrow-keeper",
+      "at": [
+        22,
+        13
+      ],
+      "near": "the keeper's stone",
+      "voice_file": "voices/barrow-keeper.md",
+      "region": "barrow-mouth",
+      "seeds": {
+        "dusk": "Down is dark and down is long, but down is where the road was first.",
+        "moonrise": "The dead keep the road. They charge nothing and they complain less than the living.",
+        "deep-night": "Cold stone, warm candles. Someone keeps the deep road lit. It is not the dead.",
+        "first-light": "Up is morning and down is truth. Most days I would pick down."
+      }
+    },
+    "sef": {
+      "name": "Sef",
+      "at": [
+        8,
+        10
+      ],
+      "near": "the drowned nave",
+      "voice_file": "voices/sef.md",
+      "region": "the-chapel",
+      "seeds": {
+        "dusk": "I sing the bell a hymn at dusk. It remembers the words. I only remember the tune.",
+        "moonrise": "The sea stands in the aisles at moonrise. It is very polite about it.",
+        "deep-night": "The Warden walks at deep-night. He is so tired. Someone should tell him to sit.",
+        "first-light": "The light comes into the nave sideways, like an apology. I like it."
+      }
+    },
+    "osric": {
+      "name": "Osric Vane",
+      "at": [
+        6,
+        4
+      ],
+      "near": "the vestry",
+      "voice_file": "voices/osric.md",
+      "region": "the-chapel",
+      "seeds": {
+        "dusk": "I cut the bell down. I have said it every dusk for ten years to an empty nave.",
+        "moonrise": "The dark was supposed to scold me. It never did. That is worse.",
+        "deep-night": "My sister keeps the chandlery. My friend keeps the deep road. I keep nothing well.",
+        "first-light": "If the lamp were lit... no. It is not my light to ask for."
+      }
+    },
+    "corwin": {
+      "name": "The Nameless Keeper",
+      "at": [
+        12,
+        10
+      ],
+      "near": "the Beacon's foot",
+      "voice_file": "voices/corwin.md",
+      "region": "vesper-point",
+      "seeds": {
+        "dusk": "I keep the road lit in the dark. I do not know why. The candles seem to.",
+        "moonrise": "A name is a lamp too. I had one once, I think. It was warm.",
+        "deep-night": "Every night I light the dark and every night the dark forgets me. It is a fair trade.",
+        "first-light": "The Beacon knows me. I am beginning to think it always did."
+      }
+    },
+    "lise": {
+      "name": "Lise Alder",
+      "at": [
+        6,
+        10
+      ],
+      "near": "the keeper's house",
+      "voice_file": "voices/lise.md",
+      "region": "vesper-point",
+      "seeds": {
+        "dusk": "The house keeps the Beacon's tools and one extra cup. It has kept the cup ten years.",
+        "moonrise": "My nieces say the Master walks the deep road. I keep the cup out anyway.",
+        "deep-night": "From up here the dark looks like a sea and the lamps look like boats.",
+        "first-light": "The kettle is on. Whoever comes home today comes home to heat."
+      },
+      "shop": "true"
+    }
+  },
+  "transitions": [
+    {
+      "from": "thornhollow",
+      "at": [
+        15,
+        0
+      ],
+      "to": "the-weald",
+      "to_at": [
+        14,
+        20
+      ]
+    },
+    {
+      "from": "the-weald",
+      "at": [
+        14,
+        21
+      ],
+      "to": "thornhollow",
+      "to_at": [
+        15,
+        1
+      ]
+    },
+    {
+      "from": "thornhollow",
+      "at": [
+        15,
+        19
+      ],
+      "to": "the-causeway",
+      "to_at": [
+        2,
+        7
+      ]
+    },
+    {
+      "from": "the-causeway",
+      "at": [
+        0,
+        7
+      ],
+      "to": "thornhollow",
+      "to_at": [
+        15,
+        18
+      ]
+    },
+    {
+      "from": "thornhollow",
+      "at": [
+        31,
+        9
+      ],
+      "to": "the-boneyard",
+      "to_at": [
+        1,
+        10
+      ]
+    },
+    {
+      "from": "the-boneyard",
+      "at": [
+        0,
+        10
+      ],
+      "to": "thornhollow",
+      "to_at": [
+        30,
+        9
+      ]
+    },
+    {
+      "from": "thornhollow",
+      "at": [
+        6,
+        4
+      ],
+      "to": "the-cellars",
+      "to_at": [
+        18,
+        10
+      ]
+    },
+    {
+      "from": "the-cellars",
+      "at": [
+        18,
+        11
+      ],
+      "to": "thornhollow",
+      "to_at": [
+        6,
+        6
+      ]
+    },
+    {
+      "from": "the-causeway",
+      "at": [
+        35,
+        7
+      ],
+      "to": "saltreach",
+      "to_at": [
+        1,
+        7
+      ]
+    },
+    {
+      "from": "saltreach",
+      "at": [
+        0,
+        7
+      ],
+      "to": "the-causeway",
+      "to_at": [
+        34,
+        7
+      ]
+    },
+    {
+      "from": "saltreach",
+      "at": [
+        29,
+        7
+      ],
+      "to": "the-boneyard",
+      "to_at": [
+        1,
+        10
+      ]
+    },
+    {
+      "from": "the-boneyard",
+      "at": [
+        16,
+        0
+      ],
+      "to": "gullwatch",
+      "to_at": [
+        12,
+        18
+      ]
+    },
+    {
+      "from": "gullwatch",
+      "at": [
+        12,
+        19
+      ],
+      "to": "the-boneyard",
+      "to_at": [
+        16,
+        1
+      ]
+    },
+    {
+      "from": "gullwatch",
+      "at": [
+        0,
+        9
+      ],
+      "to": "the-weald",
+      "to_at": [
+        28,
+        10
+      ]
+    },
+    {
+      "from": "the-weald",
+      "at": [
+        29,
+        10
+      ],
+      "to": "gullwatch",
+      "to_at": [
+        1,
+        9
+      ]
+    },
+    {
+      "from": "the-weald",
+      "at": [
+        14,
+        0
+      ],
+      "to": "barrow-mouth",
+      "to_at": [
+        13,
+        16
+      ]
+    },
+    {
+      "from": "barrow-mouth",
+      "at": [
+        13,
+        17
+      ],
+      "to": "the-weald",
+      "to_at": [
+        14,
+        1
+      ]
+    },
+    {
+      "from": "the-chapel",
+      "at": [
+        15,
+        19
+      ],
+      "to": "vesper-point",
+      "to_at": [
+        13,
+        16
+      ]
+    },
+    {
+      "from": "vesper-point",
+      "at": [
+        13,
+        17
+      ],
+      "to": "the-chapel",
+      "to_at": [
+        15,
+        18
+      ]
+    },
+    {
+      "from": "barrow-mouth",
+      "at": [
+        12,
+        9
+      ],
+      "to": "under-stair-1",
+      "to_at": [
+        6,
+        9
+      ]
+    },
+    {
+      "from": "under-stair-1",
+      "at": [
+        24,
+        12
+      ],
+      "to": "under-stair-2",
+      "to_at": [
+        21,
+        7
+      ]
+    },
+    {
+      "from": "under-stair-2",
+      "at": [
+        4,
+        4
+      ],
+      "to": "under-stair-3",
+      "to_at": [
+        21,
+        13
+      ]
+    },
+    {
+      "from": "under-stair-1",
+      "at": [
+        6,
+        9
+      ],
+      "to": "barrow-mouth",
+      "to_at": [
+        12,
+        9
+      ]
+    },
+    {
+      "from": "under-stair-2",
+      "at": [
+        21,
+        7
+      ],
+      "to": "under-stair-1",
+      "to_at": [
+        24,
+        12
+      ]
+    },
+    {
+      "from": "under-stair-3",
+      "at": [
+        21,
+        13
+      ],
+      "to": "under-stair-2",
+      "to_at": [
+        4,
+        4
+      ]
+    },
+    {
+      "from": "the-boneyard",
+      "at": [
+        26,
+        12
+      ],
+      "to": "salt-cellars-1",
+      "to_at": [
+        16,
+        7
+      ]
+    },
+    {
+      "from": "salt-cellars-1",
+      "at": [
+        25,
+        10
+      ],
+      "to": "salt-cellars-2",
+      "to_at": [
+        25,
+        15
+      ]
+    },
+    {
+      "from": "salt-cellars-1",
+      "at": [
+        16,
+        7
+      ],
+      "to": "the-boneyard",
+      "to_at": [
+        26,
+        12
+      ]
+    },
+    {
+      "from": "salt-cellars-2",
+      "at": [
+        25,
+        15
+      ],
+      "to": "salt-cellars-1",
+      "to_at": [
+        25,
+        10
+      ]
+    },
+    {
+      "from": "under-stair-3",
+      "at": [
+        3,
+        4
+      ],
+      "to": "the-chapel",
+      "to_at": [
+        29,
+        6
+      ]
+    }
+  ],
+  "start": {
+    "region": "thornhollow",
+    "at": [
+      4,
+      10
+    ]
+  },
+  "vault_intro": "The Lanternwake ledger: what the coast keeps, and what it owes.",
+  "verbs": [
+    "attack",
+    "soothe"
+  ],
+  "floor": "costume",
+  "tone": "warm",
+  "ruleset": "ambient"
+}

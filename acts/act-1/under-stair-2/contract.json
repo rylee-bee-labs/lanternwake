@@ -1,0 +1,105 @@
+{
+  "tile": 32,
+  "bg": "#0d0f12",
+  "hero_start": [
+    21,
+    7
+  ],
+  "legend": {
+    "#": {
+      "base": [
+        "#20242b"
+      ],
+      "solid": true,
+      "tile": "dungeon-wall"
+    },
+    ".": {
+      "base": [
+        "#1a1d22"
+      ],
+      "tile": "dungeon-floor"
+    },
+    "u": {
+      "base": [
+        "#2b2f38"
+      ],
+      "tile": "dungeon-stairs-up"
+    },
+    "d": {
+      "base": [
+        "#2b2f38"
+      ],
+      "tile": "dungeon-stairs-down"
+    }
+  },
+  "pois": {
+    "21,7": "the stair up",
+    "4,4": "the stair down"
+  },
+  "poi_text": {
+    "21,7": "Steps climb back toward the day.",
+    "4,4": "Steps drop into the dark."
+  },
+  "sanctuary_tiles": [],
+  "water_by_phase": {
+    "dusk": "low",
+    "moonrise": "low",
+    "deep-night": "high",
+    "first-light": "low"
+  },
+  "flood_tiles": [],
+  "watch": {},
+  "hero_color": "#e8e5df",
+  "speaker_color": "#8b939c",
+  "speaker_head": "#d8d5df",
+  "name": "Grey Road",
+  "title": "Grey Road",
+  "enemies": [
+    {
+      "id": "stair2-sentinel-1",
+      "name": "the rope-bearer",
+      "at": [
+        23,
+        3
+      ],
+      "hp": 12,
+      "atk": 3,
+      "sprite": "barrow-sentinel",
+      "drops": [
+        "the-bell-rope"
+      ],
+      "sight": 8
+    },
+    {
+      "id": "stair2-sentinel-2",
+      "name": "a barrow-sentinel",
+      "at": [
+        16,
+        8
+      ],
+      "hp": 10,
+      "atk": 3,
+      "sprite": "barrow-sentinel",
+      "drops": [
+        "whale-ivory"
+      ]
+    },
+    {
+      "id": "stair2-wisp",
+      "name": "a hush-wisp",
+      "at": [
+        7,
+        14
+      ],
+      "hp": 4,
+      "atk": 1,
+      "sprite": "hush-wisp",
+      "drops": [
+        "gloam-glass"
+      ]
+    }
+  ],
+  "fog": {
+    "radius": 4
+  }
+}

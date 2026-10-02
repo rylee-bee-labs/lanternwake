@@ -1,0 +1,117 @@
+{
+  "tile": 32,
+  "bg": "#0d0f12",
+  "hero_start": [
+    16,
+    7
+  ],
+  "legend": {
+    "#": {
+      "base": [
+        "#20242b"
+      ],
+      "solid": true,
+      "tile": "dungeon-wall"
+    },
+    ".": {
+      "base": [
+        "#1a1d22"
+      ],
+      "tile": "dungeon-floor"
+    },
+    "u": {
+      "base": [
+        "#2b2f38"
+      ],
+      "tile": "dungeon-stairs-up"
+    },
+    "d": {
+      "base": [
+        "#2b2f38"
+      ],
+      "tile": "dungeon-stairs-down"
+    }
+  },
+  "pois": {
+    "16,7": "the stair up",
+    "25,10": "the stair down"
+  },
+  "poi_text": {
+    "16,7": "Steps climb back toward the day.",
+    "25,10": "Steps drop into the dark."
+  },
+  "sanctuary_tiles": [],
+  "water_by_phase": {
+    "dusk": "low",
+    "moonrise": "low",
+    "deep-night": "high",
+    "first-light": "low"
+  },
+  "flood_tiles": [],
+  "watch": {},
+  "hero_color": "#e8e5df",
+  "speaker_color": "#8b939c",
+  "speaker_head": "#d8d5df",
+  "name": "Sunken Road",
+  "title": "Sunken Road",
+  "enemies": [
+    {
+      "id": "cellar1-mimic",
+      "name": "the thing that ate the post",
+      "at": [
+        21,
+        5
+      ],
+      "hp": 9,
+      "atk": 2,
+      "sprite": "mimic",
+      "drops": [
+        "a-saltstiff-letter"
+      ],
+      "sight": 8
+    },
+    {
+      "id": "cellar1-wight-1",
+      "name": "a salt-wight",
+      "at": [
+        9,
+        11
+      ],
+      "hp": 6,
+      "atk": 2,
+      "sprite": "salt-wight",
+      "drops": [
+        "gloam-glass"
+      ]
+    },
+    {
+      "id": "cellar1-wight-2",
+      "name": "a salt-wight",
+      "at": [
+        15,
+        14
+      ],
+      "hp": 6,
+      "atk": 2,
+      "sprite": "salt-wight",
+      "drops": [
+        "sea-salt"
+      ]
+    },
+    {
+      "id": "cellar1-wisp",
+      "name": "a hush-wisp",
+      "at": [
+        13,
+        16
+      ],
+      "hp": 4,
+      "atk": 1,
+      "sprite": "hush-wisp",
+      "drops": []
+    }
+  ],
+  "fog": {
+    "radius": 4
+  }
+}

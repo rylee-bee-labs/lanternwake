@@ -1,0 +1,114 @@
+{
+  "tile": 32,
+  "bg": "#0d0f12",
+  "hero_start": [
+    21,
+    13
+  ],
+  "legend": {
+    "#": {
+      "base": [
+        "#20242b"
+      ],
+      "solid": true,
+      "tile": "dungeon-wall"
+    },
+    ".": {
+      "base": [
+        "#1a1d22"
+      ],
+      "tile": "dungeon-floor"
+    },
+    "u": {
+      "base": [
+        "#2b2f38"
+      ],
+      "tile": "dungeon-stairs-up"
+    },
+    "d": {
+      "base": [
+        "#2b2f38"
+      ],
+      "tile": "dungeon-stairs-down"
+    }
+  },
+  "pois": {
+    "21,13": "the stair up"
+  },
+  "poi_text": {
+    "21,13": "Steps climb back toward the day."
+  },
+  "sanctuary_tiles": [],
+  "water_by_phase": {
+    "dusk": "low",
+    "moonrise": "low",
+    "deep-night": "high",
+    "first-light": "low"
+  },
+  "flood_tiles": [],
+  "watch": {},
+  "hero_color": "#e8e5df",
+  "speaker_color": "#8b939c",
+  "speaker_head": "#d8d5df",
+  "name": "Sunken Passage",
+  "title": "Sunken Passage",
+  "enemies": [
+    {
+      "id": "stair3-sentinel-1",
+      "name": "a barrow-sentinel",
+      "at": [
+        27,
+        5
+      ],
+      "hp": 10,
+      "atk": 3,
+      "sprite": "barrow-sentinel",
+      "drops": [
+        "whale-ivory"
+      ]
+    },
+    {
+      "id": "stair3-sentinel-2",
+      "name": "a barrow-sentinel",
+      "at": [
+        21,
+        7
+      ],
+      "hp": 10,
+      "atk": 3,
+      "sprite": "barrow-sentinel",
+      "drops": [
+        "amber-glass"
+      ]
+    },
+    {
+      "id": "stair3-wisp-1",
+      "name": "a hush-wisp",
+      "at": [
+        19,
+        9
+      ],
+      "hp": 4,
+      "atk": 1,
+      "sprite": "hush-wisp",
+      "drops": []
+    },
+    {
+      "id": "stair3-wisp-2",
+      "name": "a hush-wisp",
+      "at": [
+        27,
+        13
+      ],
+      "hp": 4,
+      "atk": 1,
+      "sprite": "hush-wisp",
+      "drops": [
+        "gloam-glass"
+      ]
+    }
+  ],
+  "fog": {
+    "radius": 4
+  }
+}

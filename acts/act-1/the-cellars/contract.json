@@ -1,0 +1,138 @@
+{
+  "tile": 32,
+  "bg": "#12141c",
+  "hero_start": [
+    2,
+    2
+  ],
+  "hero_color": "#e8e5df",
+  "speaker_color": "#8b939c",
+  "speaker_head": "#d8d5df",
+  "legend": {
+    "#": {
+      "base": [
+        "#2c2f38"
+      ],
+      "solid": true,
+      "tile": "rock"
+    },
+    "A": {
+      "base": [
+        "#5c4126"
+      ],
+      "solid": true,
+      "tile": "table"
+    },
+    "D": {
+      "base": [
+        "#7a5230"
+      ],
+      "tile": "door"
+    },
+    "K": {
+      "base": [
+        "#57482f"
+      ],
+      "solid": true,
+      "tile": "crate"
+    },
+    "O": {
+      "base": [
+        "#4c4436"
+      ],
+      "solid": true,
+      "tile": "barrel"
+    },
+    "P": {
+      "base": [
+        "#54401f"
+      ],
+      "solid": true,
+      "tile": "shelf"
+    },
+    "d": {
+      "base": [
+        "#242733"
+      ],
+      "tile": "dark-floor"
+    },
+    "w": {
+      "base": [
+        "#5f3f31"
+      ],
+      "tile": "wood-floor"
+    }
+  },
+  "pois": {},
+  "poi_text": {},
+  "sanctuary_tiles": [
+    "w"
+  ],
+  "water_by_phase": {
+    "dusk": "low",
+    "moonrise": "low",
+    "deep-night": "high",
+    "first-light": "low"
+  },
+  "flood_tiles": [],
+  "enemies": [
+    {
+      "id": "cellar-rat-1",
+      "name": "a gloam-rat",
+      "at": [
+        14,
+        3
+      ],
+      "hp": 3,
+      "atk": 1,
+      "sprite": "gloam-rat",
+      "drops": [
+        "smoked-fish"
+      ]
+    },
+    {
+      "id": "cellar-rat-2",
+      "name": "a gloam-rat",
+      "at": [
+        15,
+        9
+      ],
+      "hp": 3,
+      "atk": 1,
+      "sprite": "gloam-rat",
+      "drops": []
+    },
+    {
+      "id": "cellar-rat-3",
+      "name": "the ledger rat",
+      "at": [
+        10,
+        9
+      ],
+      "hp": 4,
+      "atk": 1,
+      "sprite": "gloam-rat",
+      "drops": [
+        "a-halfburnt-ledger"
+      ],
+      "sight": 8
+    },
+    {
+      "id": "cellar-wisp",
+      "name": "a hush-wisp",
+      "at": [
+        12,
+        5
+      ],
+      "hp": 4,
+      "atk": 1,
+      "sprite": "hush-wisp",
+      "drops": [
+        "gloam-glass"
+      ]
+    }
+  ],
+  "fog": {
+    "radius": 5
+  }
+}

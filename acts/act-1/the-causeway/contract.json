@@ -1,0 +1,227 @@
+{
+  "tile": 32,
+  "bg": "#12141c",
+  "hero_start": [
+    2,
+    7
+  ],
+  "hero_color": "#e8e5df",
+  "speaker_color": "#8b939c",
+  "speaker_head": "#d8d5df",
+  "legend": {
+    "#": {
+      "base": [
+        "#2c2f38"
+      ],
+      "solid": true,
+      "tile": "rock"
+    },
+    ".": {
+      "base": [
+        "#cfd6de"
+      ],
+      "tile": "snow"
+    },
+    "D": {
+      "base": [
+        "#7a5230"
+      ],
+      "tile": "door"
+    },
+    "K": {
+      "base": [
+        "#57482f"
+      ],
+      "solid": true,
+      "tile": "crate"
+    },
+    "L": {
+      "base": [
+        "#7a5a2c"
+      ],
+      "tile": "lamp"
+    },
+    "Y": {
+      "base": [
+        "#3d3a46"
+      ],
+      "solid": true,
+      "tile": "cabin-wall"
+    },
+    "h": {
+      "base": [
+        "#4a4238"
+      ],
+      "tile": "shingle"
+    },
+    "i": {
+      "base": [
+        "#2b3a4c"
+      ],
+      "tile": "ice"
+    },
+    "~": {
+      "base": [
+        "#1d2c40"
+      ],
+      "solid": true,
+      "tile": "sea"
+    }
+  },
+  "pois": {
+    "18,6": "the unlit causeway lamp"
+  },
+  "poi_text": {
+    "18,6": "A Great Lamp of the coast, dark. The glass is sound; the wick is cold. The Evercan would wake it."
+  },
+  "sanctuary_tiles": [],
+  "water_by_phase": {
+    "dusk": "low",
+    "moonrise": "low",
+    "deep-night": "high",
+    "first-light": "low"
+  },
+  "flood_tiles": [
+    [
+      0,
+      0
+    ],
+    [
+      3,
+      0
+    ],
+    [
+      6,
+      0
+    ],
+    [
+      9,
+      0
+    ],
+    [
+      12,
+      0
+    ],
+    [
+      15,
+      0
+    ],
+    [
+      18,
+      0
+    ],
+    [
+      21,
+      0
+    ],
+    [
+      24,
+      0
+    ],
+    [
+      27,
+      0
+    ],
+    [
+      30,
+      0
+    ],
+    [
+      33,
+      0
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      8,
+      1
+    ],
+    [
+      11,
+      1
+    ],
+    [
+      14,
+      1
+    ],
+    [
+      17,
+      1
+    ],
+    [
+      20,
+      1
+    ],
+    [
+      23,
+      1
+    ],
+    [
+      26,
+      1
+    ],
+    [
+      29,
+      1
+    ],
+    [
+      32,
+      1
+    ],
+    [
+      35,
+      1
+    ]
+  ],
+  "enemies": [
+    {
+      "id": "causeway-rat-1",
+      "name": "a gloam-rat",
+      "at": [
+        5,
+        6
+      ],
+      "hp": 3,
+      "atk": 1,
+      "sprite": "gloam-rat",
+      "drops": []
+    },
+    {
+      "id": "causeway-rat-2",
+      "name": "a gloam-rat",
+      "at": [
+        30,
+        9
+      ],
+      "hp": 3,
+      "atk": 1,
+      "sprite": "gloam-rat",
+      "drops": [
+        "sea-salt"
+      ]
+    },
+    {
+      "id": "causeway-wisp",
+      "name": "a hush-wisp",
+      "at": [
+        25,
+        6
+      ],
+      "hp": 4,
+      "atk": 1,
+      "sprite": "hush-wisp",
+      "drops": [
+        "gloam-glass"
+      ]
+    }
+  ],
+  "fog": {
+    "radius": 5
+  }
+}

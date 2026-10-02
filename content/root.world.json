@@ -1,0 +1,569 @@
+{
+  "title": "Lanternwake",
+  "description": "Light the coast. Carry the news. Find the Master.",
+  "creed": "Light is how a place keeps its name.",
+  "stefna_voice": "marta",
+  "surface": "combat",
+  "bonds": {
+    "given": {
+      "card": "Pressed into your hands at the gate.",
+      "prompt": "given: handed over by duty. It works. It fits badly."
+    },
+    "found": {
+      "card": "Waiting under the shingle.",
+      "prompt": "found: made for waiting hands before they knew they needed them. Rare."
+    },
+    "cold": {
+      "card": "A tool of the old Guild.",
+      "prompt": "cold: a tool. It simply works, for anyone."
+    }
+  },
+  "bond_draw": "Weight the random draw honestly: most are given or cold. Found is rare - maybe one in five. Rarity is the point.",
+  "forge_texture": "Guild work is plain and heavy. A curse on a thing is quiet: a lamp that only burns for strangers, a rope that remembers the sea.",
+  "player": {
+    "hp": 8,
+    "atk": 2,
+    "gold": 8,
+    "wake": { "region": "thornhollow", "at": [5, 6] },
+    "title_art": "assets/title.webp",
+    "accent": "#C98049",
+    "model": "optional",
+    "sprites": {
+      "hero": "sprites/hero.png",
+      "marta": "sprites/marta.png",
+      "hobb": "sprites/hobb.png",
+      "ilva": "sprites/ilva.png",
+      "quill": "sprites/quill.png",
+      "pip": "sprites/pip.png",
+      "serren": "sprites/serren.png",
+      "aisling": "sprites/aisling.png",
+      "vetch": "sprites/vetch.png",
+      "holt": "sprites/holt.png",
+      "moss": "sprites/moss.png",
+      "toll-yann": "sprites/toll-yann.png",
+      "ferry": "sprites/ferry.png",
+      "wren": "sprites/wren.png",
+      "sable": "sprites/sable.png",
+      "grandmother-ash": "sprites/grandmother-ash.png",
+      "orra": "sprites/orra.png",
+      "bett": "sprites/bett.png",
+      "drennan": "sprites/drennan.png",
+      "skua": "sprites/skua.png",
+      "halloran": "sprites/halloran.png",
+      "bonepicker": "sprites/bonepicker.png",
+      "edric": "sprites/edric.png",
+      "barrow-keeper": "sprites/barrow-keeper.png",
+      "sef": "sprites/sef.png",
+      "osric": "sprites/osric.png",
+      "corwin": "sprites/corwin.png",
+      "lise": "sprites/lise.png",
+      "keeper-gull": "sprites/keeper-gull.png",
+      "traveler": "sprites/traveler.png",
+      "gloam-rat": "sprites/gloam-rat.png",
+      "hush-wisp": "sprites/hush-wisp.png",
+      "salt-wight": "sprites/salt-wight.png",
+      "weald-husk": "sprites/weald-husk.png",
+      "drowned-chorister": "sprites/drowned-chorister.png",
+      "mimic": "sprites/mimic.png",
+      "barrow-sentinel": "sprites/barrow-sentinel.png",
+      "cliff-crab": "sprites/cliff-crab.png",
+      "the-drowned-warden": "sprites/the-drowned-warden.png",
+      "the-evercan": "sprites/the-evercan.png",
+      "lamp-hook": "sprites/lamp-hook.png",
+      "bell-rope": "sprites/bell-rope.png",
+      "the-wardens-seal": "sprites/the-wardens-seal.png",
+      "a-halfburnt-ledger": "sprites/a-halfburnt-ledger.png",
+      "a-saltstiff-letter": "sprites/a-saltstiff-letter.png",
+      "corwins-last-entry": "sprites/corwins-last-entry.png",
+      "brine-chowder": "sprites/brine-chowder.png",
+      "honey-biscuit": "sprites/honey-biscuit.png",
+      "marsh-tea": "sprites/marsh-tea.png",
+      "blackberry-cordial": "sprites/blackberry-cordial.png",
+      "smoked-fish": "sprites/smoked-fish.png",
+      "pitch-torch": "sprites/pitch-torch.png",
+      "storm-lantern": "sprites/storm-lantern.png",
+      "chalked-tide-map": "sprites/chalked-tide-map.png",
+      "amber-glass": "sprites/amber-glass.png",
+      "gloam-glass": "sprites/gloam-glass.png",
+      "whale-ivory": "sprites/whale-ivory.png",
+      "rope-coil": "sprites/rope-coil.png",
+      "candle-box": "sprites/candle-box.png",
+      "sea-salt": "sprites/sea-salt.png",
+      "wake-token": "sprites/wake-token.png",
+      "choristers-bell": "sprites/choristers-bell.png"
+    },
+    "sprite_scale": {
+      "moss": 0.55,
+      "pip": 0.8,
+      "ferry": 0.85,
+      "sable": 0.85
+    }
+  },
+  "items": {
+    "the-evercan": { "name": "the Evercan", "sprite": "the-evercan", "value": 0 },
+    "lamp-hook": { "name": "the lamp-hook", "sprite": "lamp-hook" },
+    "wake-token": { "name": "a wake-token", "sprite": "wake-token" },
+    "the-bell-rope": { "name": "the drowned bell's rope", "sprite": "bell-rope" },
+    "the-wardens-seal": { "name": "the Warden's salt-stiff seal", "sprite": "the-wardens-seal" },
+    "a-halfburnt-ledger": { "name": "a half-burnt ledger page", "sprite": "a-halfburnt-ledger" },
+    "a-saltstiff-letter": { "name": "a salt-stiff letter", "sprite": "a-saltstiff-letter" },
+    "corwins-last-entry": { "name": "the Master's last entry", "sprite": "corwins-last-entry" },
+    "brine-chowder": { "name": "a bowl of brine chowder", "sprite": "brine-chowder", "value": 4, "heal": 3, "use": "eat" },
+    "honey-biscuit": { "name": "a honey biscuit", "sprite": "honey-biscuit", "value": 2, "heal": 2, "use": "eat" },
+    "marsh-tea": { "name": "a jar of marsh tea", "sprite": "marsh-tea", "value": 3, "heal": 2, "use": "drink" },
+    "blackberry-cordial": { "name": "blackberry cordial", "sprite": "blackberry-cordial", "value": 6, "heal": 4, "use": "drink" },
+    "smoked-fish": { "name": "a length of smoked fish", "sprite": "smoked-fish", "value": 2, "heal": 1, "use": "eat" },
+    "pitch-torch": { "name": "a pitch torch", "sprite": "pitch-torch", "value": 5, "light": { "radius": 2, "turns": 6 } },
+    "storm-lantern": { "name": "a storm lantern", "sprite": "storm-lantern", "value": 14, "light": { "radius": 3, "turns": 10 } },
+    "chalked-tide-map": { "name": "a chalked tide-map", "sprite": "chalked-tide-map", "value": 8, "light": { "reveal": true } },
+    "amber-glass": { "name": "a piece of amber glass", "sprite": "amber-glass", "value": 12 },
+    "gloam-glass": { "name": "a shard of gloam-glass", "sprite": "gloam-glass", "value": 9 },
+    "whale-ivory": { "name": "a piece of whale ivory", "sprite": "whale-ivory", "value": 15 },
+    "rope-coil": { "name": "a coil of good rope", "sprite": "rope-coil", "value": 4 },
+    "candle-box": { "name": "a box of tallow candles", "sprite": "candle-box", "value": 5 },
+    "sea-salt": { "name": "a packet of sea salt", "sprite": "sea-salt", "value": 2 },
+    "choristers-bell": { "name": "the chorister's hand bell", "sprite": "choristers-bell", "value": 20 },
+    "the Guildhall ruin": { "name": "the Guildhall ruin" },
+    "the whale fall": { "name": "the whale fall" },
+    "the barrow door": { "name": "the barrow door" },
+    "the sea-cave mouth": { "name": "the sea-cave mouth" },
+    "the unlit causeway lamp": { "name": "the unlit causeway lamp" },
+    "the unlit ferry lamp": { "name": "the unlit ferry lamp" },
+    "the unlit cliff lamp": { "name": "the unlit cliff lamp" },
+    "the unlit weald lamp": { "name": "the unlit weald lamp" },
+    "the unlit chapel lamp": { "name": "the unlit chapel lamp" },
+    "the Beacon door": { "name": "the Beacon door" }
+  },
+  "grammars": {
+    "whisper": {
+      "origin": [
+        "#who# says #news#.",
+        "#who# swears #news#.",
+        "They say #news#.",
+        "Down at the water, #who# says #news#."
+      ],
+      "who": [
+        "the innkeeper", "a carter", "the netmender", "an old sailor",
+        "the toll-keeper", "a ferry boy", "the reeve", "the physician",
+        "a woman with a lantern", "the bird-catcher", "the rope-maker",
+        "someone up from the marsh", "the bonepicker", "a child running"
+      ],
+      "news": [
+        "the causeway lamp is dark again", "the tide stood high at midday",
+        "someone lit a candle on the cliff", "the bell rang under the water",
+        "the weald has gone quiet", "the coach brought a stranger with a can",
+        "the Hush took a name from the marsh", "the gulls flew inland at dusk",
+        "the Beacon flashed once in the night", "the barrow door stands open",
+        "the Guild's ledger was seen in the cellars", "the Warden walks the nave",
+        "the ferry lamp is burning", "the whale gave back another rib",
+        "the frost came early on the moor", "the master's name is on no one's lips",
+        "the sea gave back the rope", "the lamps remember their oil",
+        "someone new sleeps at the Brine & Wick", "the road north is walkable again",
+        "the ice sang on the causeway", "the deep road has candles in it"
+      ]
+    },
+    "weather": {
+      "origin": ["#sky# over #place#.", "#sky#, and #air#."],
+      "sky": ["Low cloud", "A grey sky", "Hard frost", "Snow coming", "A wind off the water", "Clear and cold"],
+      "place": ["the reach", "the causeway", "Saltreach", "Gullwatch", "the weald", "the headland"],
+      "air": ["the road smells of salt and smoke", "the lamps burn blue", "the shingle is loud", "the dark stands high", "the snow keeps the names"]
+    },
+    "name": {
+      "origin": ["#adj# #noun#"],
+      "adj": ["Grey", "Sunken", "Old", "Quiet", "Long", "Salt", "Candle", "Drowned"],
+      "noun": ["Stair", "Cellar", "Vault", "Passage", "Barrow", "Mile", "Chamber", "Road"]
+    }
+  },
+  "flags": {
+    "moss-noticed": "Moss the cat has looked up at the hero once.",
+    "the-causeway-lamp-lit": "The Great Lamp on Toll Rock burns again.",
+    "the-ferry-lamp-lit": "The ferry lamp at Saltreach burns again.",
+    "the-cliff-lamp-lit": "The cliff lamp at Gullwatch burns again.",
+    "the-weald-lamp-lit": "The weald lamp in the Ash Clearing burns again.",
+    "the-chapel-lamp-lit": "The chapel lamp in the drowned nave burns again.",
+    "the-beacon-lit": "The Beacon at Vesper Point burns again.",
+    "the-ledger-found": "The hero found the half-burnt Guildhall ledger page.",
+    "the-seal-found": "The hero found the Warden's seal in the nave.",
+    "the-letter-found": "The hero found Corwin's unsent letter on the deep road.",
+    "the-rope-found": "The hero found the drowned bell's rope on the boneyard.",
+    "the-entry-found": "The hero found the Master's last entry at the Beacon.",
+    "met-the-master": "The hero met the nameless keeper and heard his name return."
+  },
+  "claims": {
+    "the-master-fled": { "meaning": "Master Lampwright Corwin Thale fled the coast the night the bell drowned.", "true": false },
+    "the-warden-drowned-the-bell": { "meaning": "Osric Vane, Warden of the chapel, cut the bell down and let the sea take it.", "true": true },
+    "the-hush-is-judgment": { "meaning": "The Hush is a judgment on the coast's pride in its lamps.", "true": false },
+    "the-master-lives": { "meaning": "Corwin Thale lives, somewhere in the dark below the coast.", "true": true },
+    "the-apprentice-burned-the-hall": { "meaning": "The new apprentice's Guild deliberately burned its own hall.", "true": false }
+  },
+  "people": {
+    "marta": { "believes": ["the-master-fled"] },
+    "holt": { "believes": ["the-master-fled", "the-apprentice-burned-the-hall"] },
+    "aisling": { "believes": ["the-apprentice-burned-the-hall"] },
+    "vetch": { "believes": ["the-master-fled"] },
+    "bett": { "believes": ["the-master-fled"] },
+    "ilva": { "believes": ["the-hush-is-judgment"] },
+    "toll-yann": { "believes": ["the-hush-is-judgment"] },
+    "drennan": { "believes": ["the-hush-is-judgment"] },
+    "hobb": { "believes": ["the-warden-drowned-the-bell"] },
+    "grandmother-ash": { "believes": ["the-warden-drowned-the-bell", "the-master-lives"] },
+    "wren": { "believes": ["the-master-lives"] },
+    "pip": { "believes": ["the-master-lives"] },
+    "lise": { "believes": ["the-master-lives"] }
+  },
+  "rules": [
+    {
+      "id": "wake-up",
+      "when": { "starts": {} },
+      "then": [
+        { "give": "the-evercan" },
+        { "say": "The coach leaves you at the Thornhollow gate with the Guild's Evercan and its ledger. Five Great Lamps stand dark along the coast." },
+        { "point-to": "thornhollow" }
+      ]
+    },
+    {
+      "id": "moss-notices",
+      "when": { "comes-near": { "who": "moss", "distance": 2 } },
+      "if": [ { "flag": "moss-noticed", "is": false } ],
+      "then": [
+        { "set": "moss-noticed" },
+        { "say": { "who": "moss", "line": "Mrrp." } }
+      ]
+    },
+    {
+      "id": "marta-welcome",
+      "when": { "enters": { "place": "thornhollow" } },
+      "then": [
+        { "say": { "who": "marta", "line": "An apprentice? We had stopped hoping. The lamps are still out there, waiting for someone with oil and patience." } }
+      ]
+    },
+    {
+      "id": "light-the-causeway-lamp",
+      "when": { "comes-near": { "who": "the unlit causeway lamp", "distance": 1 } },
+      "if": [ { "has": "the-evercan" }, { "flag": "the-causeway-lamp-lit", "is": false } ],
+      "then": [
+        { "set": "the-causeway-lamp-lit" },
+        { "give": "wake-token" },
+        { "say": "You pour from the Evercan and strike the flint. The wick takes the oil and wakes: the causeway lamp burns again, and the dark stands back a step." },
+        { "point-to": "saltreach" }
+      ]
+    },
+    {
+      "id": "light-the-ferry-lamp",
+      "when": { "comes-near": { "who": "the unlit ferry lamp", "distance": 1 } },
+      "if": [ { "has": "the-evercan" }, { "flag": "the-ferry-lamp-lit", "is": false } ],
+      "then": [
+        { "set": "the-ferry-lamp-lit" },
+        { "give": "wake-token" },
+        { "say": "Oil, flint, patience. The ferry lamp catches, and its light lies flat across the water like a road." },
+        { "point-to": "gullwatch" }
+      ]
+    },
+    {
+      "id": "light-the-cliff-lamp",
+      "when": { "comes-near": { "who": "the unlit cliff lamp", "distance": 1 } },
+      "if": [ { "has": "the-evercan" }, { "flag": "the-cliff-lamp-lit", "is": false } ],
+      "then": [
+        { "set": "the-cliff-lamp-lit" },
+        { "give": "wake-token" },
+        { "say": "The cliff lamp wakes. Far down the reach another lamp answers - or it is a star, keeping faith." },
+        { "point-to": "the-weald" }
+      ]
+    },
+    {
+      "id": "light-the-weald-lamp",
+      "when": { "comes-near": { "who": "the unlit weald lamp", "distance": 1 } },
+      "if": [ { "has": "the-evercan" }, { "flag": "the-weald-lamp-lit", "is": false } ],
+      "then": [
+        { "set": "the-weald-lamp-lit" },
+        { "give": "wake-token" },
+        { "say": "The weald lamp burns in its ash stump. The pines lean toward it like people at a fire." },
+        { "point-to": "barrow-mouth" }
+      ]
+    },
+    {
+      "id": "light-the-chapel-lamp",
+      "when": { "comes-near": { "who": "the unlit chapel lamp", "distance": 1 } },
+      "if": [ { "has": "the-evercan" }, { "flag": "the-chapel-lamp-lit", "is": false } ],
+      "then": [
+        { "set": "the-chapel-lamp-lit" },
+        { "give": "wake-token" },
+        { "say": "The chapel lamp takes the flame. The drowned nave stands in its own light, sea and all." },
+        { "point-to": "vesper-point" }
+      ]
+    },
+    {
+      "id": "the-beacon-lights",
+      "when": { "comes-near": { "who": "the Beacon door", "distance": 1 } },
+      "if": [
+        { "has": "the-evercan" },
+        { "all-of": [
+          { "flag": "the-causeway-lamp-lit", "is": true },
+          { "flag": "the-ferry-lamp-lit", "is": true },
+          { "flag": "the-cliff-lamp-lit", "is": true },
+          { "flag": "the-weald-lamp-lit", "is": true },
+          { "flag": "the-chapel-lamp-lit", "is": true }
+        ] }
+      ],
+      "then": [
+        { "set": "the-beacon-lit" },
+        { "give": "wake-token" },
+        { "weather": "clear" },
+        { "say": "The Beacon takes the light and gives it back a hundredfold. The whole coast stands clear, lamp to lamp, all the way to the water." }
+      ]
+    },
+    {
+      "id": "ledger-found",
+      "when": { "picks-up": { "what": "a-halfburnt-ledger" } },
+      "then": [
+        { "set": "the-ledger-found" },
+        { "say": "The Guildhall ledger, half-burnt: the fire began with a storm lamp and a dry beam. It was no one's crime." }
+      ]
+    },
+    {
+      "id": "seal-found",
+      "when": { "picks-up": { "what": "the-wardens-seal" } },
+      "then": [
+        { "set": "the-seal-found" },
+        { "say": "Osric Vane's chapel seal, salt-stiff. The Warden was here - and not long gone." }
+      ]
+    },
+    {
+      "id": "letter-found",
+      "when": { "picks-up": { "what": "a-saltstiff-letter" } },
+      "then": [
+        { "set": "the-letter-found" },
+        { "say": "Corwin's unsent letter: 'Osric - the bell must not fall. Wait for me. I am coming down.'" }
+      ]
+    },
+    {
+      "id": "rope-found",
+      "when": { "picks-up": { "what": "the-bell-rope" } },
+      "then": [
+        { "set": "the-rope-found" },
+        { "say": "The drowned bell's rope. Cut clean through. The sea gave it back after ten years." }
+      ]
+    },
+    {
+      "id": "holt-opens-the-road",
+      "when": { "comes-near": { "who": "holt", "distance": 2 } },
+      "if": [ { "flag": "the-beacon-lit", "is": true } ],
+      "then": [
+        { "stops-believing": { "who": "holt", "claim": "the-master-fled" } },
+        { "stops-believing": { "who": "holt", "claim": "the-apprentice-burned-the-hall" } },
+        { "say": { "who": "holt", "line": "The road stands open again. I shut it ten years ago out of fear and called it prudence. I am done calling things prudence." } }
+      ]
+    },
+    {
+      "id": "aisling-believes",
+      "when": { "comes-near": { "who": "aisling", "distance": 2 } },
+      "if": [ { "has": "a-halfburnt-ledger" } ],
+      "then": [
+        { "stops-believing": { "who": "aisling", "claim": "the-apprentice-burned-the-hall" } },
+        { "say": { "who": "aisling", "line": "A storm lamp and a dry beam... then the hall burned by accident. I am sorry, apprentice. I wanted it to be someone's fault." } }
+      ]
+    },
+    {
+      "id": "drennan-believes",
+      "when": { "comes-near": { "who": "drennan", "distance": 2 } },
+      "if": [ { "has": "the-wardens-seal" } ],
+      "then": [
+        { "stops-believing": { "who": "drennan", "claim": "the-hush-is-judgment" } },
+        { "believes": { "who": "drennan", "claim": "the-warden-drowned-the-bell" } },
+        { "say": { "who": "drennan", "line": "Osric's seal. He cut the bell down himself. All these years I called it judgment - it was grief." } }
+      ]
+    },
+    {
+      "id": "vetch-believes",
+      "when": { "comes-near": { "who": "vetch", "distance": 2 } },
+      "if": [ { "has": "a-saltstiff-letter" } ],
+      "then": [
+        { "stops-believing": { "who": "vetch", "claim": "the-master-fled" } },
+        { "believes": { "who": "vetch", "claim": "the-master-lives" } },
+        { "say": { "who": "vetch", "line": "He went toward the bell, not away from it. I have been counting wrong for ten years. Find him." } }
+      ]
+    },
+    {
+      "id": "marta-believes",
+      "when": { "comes-near": { "who": "marta", "distance": 2 } },
+      "if": [ { "has": "the-bell-rope" } ],
+      "then": [
+        { "stops-believing": { "who": "marta", "claim": "the-master-fled" } },
+        { "believes": { "who": "marta", "claim": "the-master-lives" } },
+        { "say": { "who": "marta", "line": "Cut clean. He never fled - he went down after the bell. Then he is down there still, and supper will wait." } }
+      ]
+    },
+    {
+      "id": "ilva-believes",
+      "when": { "comes-near": { "who": "ilva", "distance": 2 } },
+      "if": [ { "flag": "the-chapel-lamp-lit", "is": true } ],
+      "then": [
+        { "stops-believing": { "who": "ilva", "claim": "the-hush-is-judgment" } },
+        { "say": { "who": "ilva", "line": "You lit the drowned nave. Judgment does not light lamps. I was wrong, and I am glad of it." } }
+      ]
+    },
+    {
+      "id": "weald-gloom",
+      "when": { "enters": { "place": "the-weald" } },
+      "then": [
+        { "weather": "fog" },
+        { "say": "The Hush pools between the pines tonight. Keep the Evercan close and walk where the lamps can see you." }
+      ]
+    },
+    {
+      "id": "causeway-tide",
+      "when": { "enters": { "place": "the-causeway" } },
+      "then": [
+        { "say": "The tide stands high at deep-night and the causeway walks under water then. Walk it anyway; the road remembers where it is." }
+      ]
+    },
+    {
+      "id": "beacon-wind",
+      "when": { "enters": { "place": "vesper-point" } },
+      "then": [
+        { "weather": "clear" },
+        { "say": "The wind scours Vesper Point clean. The Beacon stands over everything, waiting for one flame." }
+      ]
+    },
+    {
+      "id": "guildhall-ruin",
+      "when": { "comes-near": { "who": "the Guildhall ruin", "distance": 1 } },
+      "then": [
+        { "say": "The Guildhall's burned bones. Among the charcoal: the shape of a desk, a forge, a life's work. Rebuilding starts with one lamp." }
+      ]
+    },
+    {
+      "id": "whale-fall",
+      "when": { "comes-near": { "who": "the whale fall", "distance": 1 } },
+      "then": [
+        { "say": "The ribs of a whale the sea gave back. The bonepicker says the sea returns everything it takes, in its own time." }
+      ]
+    },
+    {
+      "id": "barrow-door",
+      "when": { "comes-near": { "who": "the barrow door", "distance": 1 } },
+      "then": [
+        { "say": "The barrow breathes cold. Somewhere under it the deep road runs to the sea, and someone keeps it lit." }
+      ]
+    },
+    {
+      "id": "sea-cave",
+      "when": { "comes-near": { "who": "the sea-cave mouth", "distance": 1 } },
+      "then": [
+        { "say": "The tide breathes in and out of the cave. Stone steps go down into the salt cellars." }
+      ]
+    },
+    {
+      "id": "pip-calls",
+      "when": { "comes-near": { "who": "pip", "distance": 2 } },
+      "then": [
+        { "say": { "who": "pip", "line": "You carry the can! Then you are the lampwright. The real one! I will tell everyone. EVERYONE." } }
+      ]
+    },
+    {
+      "id": "ferry-sings",
+      "when": { "comes-near": { "who": "ferry", "distance": 2 } },
+      "then": [
+        { "say": { "who": "ferry", "line": "The bell sings under the water. I hear it when I pole quiet. It is not a sad song." } }
+      ]
+    },
+    {
+      "id": "ash-hints",
+      "when": { "comes-near": { "who": "grandmother-ash", "distance": 2 } },
+      "then": [
+        { "say": { "who": "grandmother-ash", "line": "Ask what happened to the bell. Ask Hobb. Ask anyone - but do not ask the priest, not yet. He cannot bear it." } }
+      ]
+    },
+    {
+      "id": "sef-sings",
+      "when": { "comes-near": { "who": "sef", "distance": 2 } },
+      "then": [
+        { "say": { "who": "sef", "line": "The bell wants to be found. It sings in the deep water still. I keep it company until someone comes." } }
+      ]
+    },
+    {
+      "id": "osric-puts-it-down",
+      "when": { "comes-near": { "who": "osric", "distance": 2 } },
+      "if": [ { "flag": "the-chapel-lamp-lit", "is": true } ],
+      "then": [
+        { "say": { "who": "osric", "line": "The lamp is lit again. Ten years I waited for the dark to scold me. It never did. Perhaps I may put it down." } }
+      ]
+    },
+    {
+      "id": "the-master-returns",
+      "when": { "comes-near": { "who": "corwin", "distance": 2 } },
+      "if": [ { "flag": "the-beacon-lit", "is": true } ],
+      "then": [
+        { "set": "met-the-master" },
+        { "set": "the-entry-found" },
+        { "give": "corwins-last-entry" },
+        { "say": { "who": "corwin", "line": "I kept the road lit in the dark and never knew why. The Beacon knows. Take this - I wrote it when I still had words for it." } }
+      ]
+    },
+    {
+      "id": "lise-welcomes",
+      "when": { "comes-near": { "who": "lise", "distance": 2 } },
+      "if": [ { "flag": "the-beacon-lit", "is": true } ],
+      "then": [
+        { "say": { "who": "lise", "line": "He came home. The lamps are lit. Sit down, lampwright - the kettle is on, and the sea can wait." } }
+      ]
+    },
+    {
+      "id": "marta-keeps-the-seat",
+      "when": { "comes-near": { "who": "marta", "distance": 2 } },
+      "if": [ { "flag": "the-beacon-lit", "is": true } ],
+      "then": [
+        { "say": { "who": "marta", "line": "The Brine & Wick keeps your seat by the fire. Every lamp between here and the point burns because of you." } }
+      ]
+    },
+    {
+      "id": "moss-last",
+      "when": { "comes-near": { "who": "moss", "distance": 2 } },
+      "if": [ { "flag": "the-beacon-lit", "is": true } ],
+      "then": [
+        { "say": { "who": "moss", "line": "Mrrp." } }
+      ]
+    },
+    {
+      "id": "hobb-hears",
+      "when": { "comes-near": { "who": "hobb", "distance": 2 } },
+      "if": [ { "flag": "the-ferry-lamp-lit", "is": true } ],
+      "then": [
+        { "say": { "who": "hobb", "line": "The ferry lamp burning again? Corwin would laugh to see it. He loved that lamp - it was the first he ever lit." } }
+      ]
+    },
+    {
+      "id": "bett-asks",
+      "when": { "comes-near": { "who": "bett", "distance": 2 } },
+      "if": [ { "flag": "the-cliff-lamp-lit", "is": true } ],
+      "then": [
+        { "say": { "who": "bett", "line": "You lit the cliff lamp! Then teach me. Please. The Guild needs a next lampwright and I am right here." } }
+      ]
+    },
+    {
+      "id": "skua-saw",
+      "when": { "comes-near": { "who": "skua", "distance": 2 } },
+      "if": [ { "flag": "the-weald-lamp-lit", "is": true } ],
+      "then": [
+        { "say": { "who": "skua", "line": "The gulls flew over the weald lamp at dawn. Gulls do not lie. The road sings between the trees." } }
+      ]
+    },
+    {
+      "id": "serren-counts",
+      "when": { "comes-near": { "who": "serren", "distance": 2 } },
+      "if": [ { "flag": "the-causeway-lamp-lit", "is": true } ],
+      "then": [
+        { "say": { "who": "serren", "line": "Tide low at deep-night, lamp lit at dusk. The coast keeps its old manners when someone keeps the lamps." } }
+      ]
+    },
+    {
+      "id": "quill-rebuilds",
+      "when": { "comes-near": { "who": "quill", "distance": 2 } },
+      "if": [ { "has": "a-halfburnt-ledger" } ],
+      "then": [
+        { "give": "candle-box" },
+        { "say": { "who": "quill", "line": "The ledger! One honest page is enough to rebuild a Guild from. Take these candles - the clerks' thanks." } }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "tile": 32,
+  "bg": "#12141c",
+  "hero_start": [
+    3,
+    13
+  ],
+  "hero_color": "#e8e5df",
+  "speaker_color": "#8b939c",
+  "speaker_head": "#d8d5df",
+  "legend": {
+    "#": {
+      "base": [
+        "#2c2f38"
+      ],
+      "solid": true,
+      "tile": "rock"
+    },
+    ",": {
+      "base": [
+        "#b9c4cf"
+      ],
+      "tile": "frost"
+    },
+    ".": {
+      "base": [
+        "#cfd6de"
+      ],
+      "tile": "snow"
+    },
+    "B": {
+      "base": [
+        "#4a3b2c"
+      ],
+      "solid": true,
+      "tile": "pine-bare"
+    },
+    "D": {
+      "base": [
+        "#7a5230"
+      ],
+      "tile": "door"
+    },
+    "M": {
+      "base": [
+        "#565660"
+      ],
+      "solid": true,
+      "tile": "grave"
+    },
+    "Q": {
+      "base": [
+        "#4c4238"
+      ],
+      "solid": true,
+      "tile": "bench"
+    },
+    "_": {
+      "base": [
+        "#7d6a4c"
+      ],
+      "tile": "moor"
+    }
+  },
+  "pois": {
+    "12,9": "the barrow door"
+  },
+  "poi_text": {
+    "12,9": "The barrow's dark door. The stone is older than the town."
+  },
+  "sanctuary_tiles": [],
+  "water_by_phase": {
+    "dusk": "low",
+    "moonrise": "low",
+    "deep-night": "high",
+    "first-light": "low"
+  },
+  "flood_tiles": [],
+  "enemies": [
+    {
+      "id": "sentinel-1",
+      "name": "a barrow-sentinel",
+      "at": [
+        9,
+        4
+      ],
+      "hp": 10,
+      "atk": 3,
+      "sprite": "barrow-sentinel",
+      "drops": [
+        "whale-ivory"
+      ]
+    },
+    {
+      "id": "sentinel-2",
+      "name": "a barrow-sentinel",
+      "at": [
+        15,
+        5
+      ],
+      "hp": 10,
+      "atk": 3,
+      "sprite": "barrow-sentinel",
+      "drops": [
+        "candle-box"
+      ]
+    }
+  ],
+  "fog": {
+    "radius": 5
+  }
+}

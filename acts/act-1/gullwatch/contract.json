@@ -1,0 +1,148 @@
+{
+  "tile": 32,
+  "bg": "#12141c",
+  "hero_start": [
+    2,
+    10
+  ],
+  "hero_color": "#e8e5df",
+  "speaker_color": "#8b939c",
+  "speaker_head": "#d8d5df",
+  "legend": {
+    "#": {
+      "base": [
+        "#2c2f38"
+      ],
+      "solid": true,
+      "tile": "rock"
+    },
+    ".": {
+      "base": [
+        "#cfd6de"
+      ],
+      "tile": "snow"
+    },
+    "A": {
+      "base": [
+        "#5c4126"
+      ],
+      "solid": true,
+      "tile": "table"
+    },
+    "B": {
+      "base": [
+        "#4a3b2c"
+      ],
+      "solid": true,
+      "tile": "pine-bare"
+    },
+    "D": {
+      "base": [
+        "#7a5230"
+      ],
+      "tile": "door"
+    },
+    "L": {
+      "base": [
+        "#7a5a2c"
+      ],
+      "tile": "lamp"
+    },
+    "P": {
+      "base": [
+        "#54401f"
+      ],
+      "solid": true,
+      "tile": "shelf"
+    },
+    "T": {
+      "base": [
+        "#2c4a33"
+      ],
+      "solid": true,
+      "tile": "pine"
+    },
+    "V": {
+      "base": [
+        "#7a7a84"
+      ],
+      "solid": true,
+      "tile": "statue"
+    },
+    "W": {
+      "base": [
+        "#4a3826"
+      ],
+      "solid": true,
+      "tile": "window"
+    },
+    "X": {
+      "base": [
+        "#3a2b22"
+      ],
+      "solid": true,
+      "tile": "timber-wall"
+    },
+    "Y": {
+      "base": [
+        "#3d3a46"
+      ],
+      "solid": true,
+      "tile": "cabin-wall"
+    },
+    "Z": {
+      "base": [
+        "#232735"
+      ],
+      "solid": true,
+      "tile": "dark-wall"
+    },
+    "c": {
+      "base": [
+        "#5a5a60"
+      ],
+      "tile": "cobble"
+    },
+    "f": {
+      "base": [
+        "#7a6a52"
+      ],
+      "tile": "flagstone"
+    },
+    "h": {
+      "base": [
+        "#4a4238"
+      ],
+      "tile": "shingle"
+    },
+    "p": {
+      "base": [
+        "#8f7346"
+      ],
+      "tile": "plank"
+    },
+    "w": {
+      "base": [
+        "#5f3f31"
+      ],
+      "tile": "wood-floor"
+    }
+  },
+  "pois": {
+    "27,9": "the unlit cliff lamp"
+  },
+  "poi_text": {
+    "27,9": "The cliff lamp, dark. From here the whole reach can be seen - and the dark along it."
+  },
+  "sanctuary_tiles": [
+    "w"
+  ],
+  "water_by_phase": {
+    "dusk": "low",
+    "moonrise": "low",
+    "deep-night": "high",
+    "first-light": "low"
+  },
+  "flood_tiles": [],
+  "enemies": []
+}

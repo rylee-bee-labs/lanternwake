@@ -1,0 +1,168 @@
+{
+  "tile": 32,
+  "bg": "#12141c",
+  "hero_start": [
+    4,
+    10
+  ],
+  "hero_color": "#e8e5df",
+  "speaker_color": "#8b939c",
+  "speaker_head": "#d8d5df",
+  "legend": {
+    "#": {
+      "base": [
+        "#2c2f38"
+      ],
+      "solid": true,
+      "tile": "rock"
+    },
+    ".": {
+      "base": [
+        "#cfd6de"
+      ],
+      "tile": "snow"
+    },
+    "A": {
+      "base": [
+        "#5c4126"
+      ],
+      "solid": true,
+      "tile": "table"
+    },
+    "B": {
+      "base": [
+        "#4a3b2c"
+      ],
+      "solid": true,
+      "tile": "pine-bare"
+    },
+    "D": {
+      "base": [
+        "#7a5230"
+      ],
+      "tile": "door"
+    },
+    "E": {
+      "base": [
+        "#4c4c52"
+      ],
+      "solid": true,
+      "tile": "well"
+    },
+    "H": {
+      "base": [
+        "#4c3a2c"
+      ],
+      "solid": true,
+      "tile": "bed"
+    },
+    "M": {
+      "base": [
+        "#565660"
+      ],
+      "solid": true,
+      "tile": "grave"
+    },
+    "O": {
+      "base": [
+        "#4c4436"
+      ],
+      "solid": true,
+      "tile": "barrel"
+    },
+    "P": {
+      "base": [
+        "#54401f"
+      ],
+      "solid": true,
+      "tile": "shelf"
+    },
+    "Q": {
+      "base": [
+        "#4c4238"
+      ],
+      "solid": true,
+      "tile": "bench"
+    },
+    "R": {
+      "base": [
+        "#3c3730"
+      ],
+      "solid": true,
+      "tile": "ruin"
+    },
+    "T": {
+      "base": [
+        "#2c4a33"
+      ],
+      "solid": true,
+      "tile": "pine"
+    },
+    "V": {
+      "base": [
+        "#7a7a84"
+      ],
+      "solid": true,
+      "tile": "statue"
+    },
+    "W": {
+      "base": [
+        "#4a3826"
+      ],
+      "solid": true,
+      "tile": "window"
+    },
+    "X": {
+      "base": [
+        "#3a2b22"
+      ],
+      "solid": true,
+      "tile": "timber-wall"
+    },
+    "c": {
+      "base": [
+        "#5a5a60"
+      ],
+      "tile": "cobble"
+    },
+    "d": {
+      "base": [
+        "#242733"
+      ],
+      "tile": "dark-floor"
+    },
+    "f": {
+      "base": [
+        "#7a6a52"
+      ],
+      "tile": "flagstone"
+    },
+    "w": {
+      "base": [
+        "#5f3f31"
+      ],
+      "tile": "wood-floor"
+    }
+  },
+  "pois": {
+    "3,13": "the Guildhall ruin",
+    "15,15": "the candle-shrine",
+    "10,13": "the old well"
+  },
+  "poi_text": {
+    "3,13": "The Guildhall's burned bones. The beams are charcoal; the stone is sound. Someone should rebuild it.",
+    "15,15": "A hundred stubs of candle on a stone table. Someone keeps lighting them.",
+    "10,13": "The old well of Thornhollow. The rope is frayed; the water is far below."
+  },
+  "sanctuary_tiles": [
+    "w"
+  ],
+  "water_by_phase": {
+    "dusk": "low",
+    "moonrise": "low",
+    "deep-night": "high",
+    "first-light": "low"
+  },
+  "flood_tiles": [],
+  "enemies": []
+}
