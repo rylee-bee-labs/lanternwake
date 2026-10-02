@@ -1,0 +1,55 @@
+name: pack-check
+
+# E15: the two minimal, clean-clone gates for this pack repo.
+#
+#  - secret-scan: estate-wide parity with the other repos (ci-harness
+#    reusable, SHA-pinned).
+#  - validate-pack: the project's documented gate, `norns validate`
+#    (README "Make it"; design/PLAYTEST-LOG.md row 1). VEFR is fetched
+#    from its public repo at a pinned SHA, so no local engine checkout
+#    or personal path is assumed.
+#
+# Deliberately NOT here: tools/rules_test.mjs (needs a woven dist/*.html
+# + jsdom) and tools/playtest.py (Playwright browser journey). Those are
+# the manual playtest loop (design/PLAYTEST-LOG.md), not a PR gate; human
+# playtest findings stay tracked in that log.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pack-check-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  # The VEFR commit this pack is validated against.
+  VEFR_REF: f78fd17098b18508d742c28af110491955725dc6
+
+jobs:
+  secret-scan:
+    uses: Rylee-Bee/ci-harness/.github/workflows/reusable-secret-scan.yml@7e9a2d64705c4d3deaaca8ef89dac6a8f5f3d9ea
+    with:
+      fetch-depth: 0
+
+  validate-pack:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@bec219d24cd3e171d82865faccec33120bb574f4 # v10.1.0
+        with:
+          version: "latest"
+
+      - name: Validate the pack (pinned VEFR)
+        run: >-
+          uvx --no-progress
+          --from "vefr @ git+https://github.com/Rylee-Bee/vefr@${VEFR_REF}"
+          norns validate --pack .
