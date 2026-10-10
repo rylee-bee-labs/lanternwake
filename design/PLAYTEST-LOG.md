@@ -5,7 +5,7 @@ order of strictness:
 
 | Tool | What it proves | Status |
 |---|---|---|
-| `norns validate --pack worlds/lanternwake` | geometry, reachability, voices, books, rules shape | green |
+| `norns validate --pack .` | geometry, reachability, voices, books, rules shape | green |
 | `tools/rules_test.mjs` (jsdom, real woven file) | the spine logic: lights, once-only, Beacon condition, beliefs | 14/14 |
 | `tools/playtest.py` (Playwright, real browser) | the journey: title, walk, book, talk, whisper, phase rail, bag, door, combat | all steps held |
 
