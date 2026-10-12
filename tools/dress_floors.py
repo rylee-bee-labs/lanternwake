@@ -107,7 +107,10 @@ def main() -> int:
         for spec in FLOOR_ENEMIES.get(rdir.name, []):
             eid, name, sprite, hp, atk, drops, *sight = spec
             enemies.append({"id": eid, "name": name, "at": [0, 0], "hp": hp,
-                            "atk": atk, "sprite": sprite, "drops": drops,
+                            "atk": atk, "sprite": sprite,
+                            # no "drops" key when it carries nothing:
+                            # VEFR refuses an empty drops line
+                            **({"drops": drops} if drops else {}),
                             **({"sight": sight[0]} if sight else {})})
         slots = place_slots(rows, len(enemies))
         for e, (x, y) in zip(enemies, slots):

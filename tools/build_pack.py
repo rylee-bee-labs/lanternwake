@@ -533,12 +533,12 @@ CHESTS = {
 ENEMIES = {
     "the-cellars": [
         {"id": "cellar-rat-1", "name": "a gloam-rat", "at": [14, 3], "hp": 3, "atk": 1, "sprite": "gloam-rat", "drops": ["smoked-fish"]},
-        {"id": "cellar-rat-2", "name": "a gloam-rat", "at": [15, 9], "hp": 3, "atk": 1, "sprite": "gloam-rat", "drops": []},
+        {"id": "cellar-rat-2", "name": "a gloam-rat", "at": [15, 9], "hp": 3, "atk": 1, "sprite": "gloam-rat"},
         {"id": "cellar-rat-3", "name": "the ledger rat", "at": [10, 9], "hp": 4, "atk": 1, "sprite": "gloam-rat", "drops": ["a-halfburnt-ledger"], "sight": 8},
         {"id": "cellar-wisp", "name": "a hush-wisp", "at": [12, 5], "hp": 4, "atk": 1, "sprite": "hush-wisp", "drops": ["gloam-glass"]},
     ],
     "the-causeway": [
-        {"id": "causeway-rat-1", "name": "a gloam-rat", "at": [5, 6], "hp": 3, "atk": 1, "sprite": "gloam-rat", "drops": []},
+        {"id": "causeway-rat-1", "name": "a gloam-rat", "at": [5, 6], "hp": 3, "atk": 1, "sprite": "gloam-rat"},
         {"id": "causeway-rat-2", "name": "a gloam-rat", "at": [30, 9], "hp": 3, "atk": 1, "sprite": "gloam-rat", "drops": ["sea-salt"]},
         {"id": "causeway-wisp", "name": "a hush-wisp", "at": [25, 6], "hp": 4, "atk": 1, "sprite": "hush-wisp", "drops": ["gloam-glass"]},
     ],
@@ -548,14 +548,14 @@ ENEMIES = {
         {"id": "marsh-wight-3", "name": "a salt-wight", "at": [5, 3], "hp": 6, "atk": 2, "sprite": "salt-wight", "drops": ["marsh-tea"]},
     ],
     "the-boneyard": [
-        {"id": "cliff-crab-1", "name": "a cliff-crab", "at": [4, 8], "hp": 4, "atk": 1, "sprite": "cliff-crab", "drops": []},
+        {"id": "cliff-crab-1", "name": "a cliff-crab", "at": [4, 8], "hp": 4, "atk": 1, "sprite": "cliff-crab"},
         {"id": "cliff-crab-2", "name": "a cliff-crab", "at": [26, 9], "hp": 4, "atk": 1, "sprite": "cliff-crab", "drops": ["sea-salt"]},
-        {"id": "cliff-crab-3", "name": "a cliff-crab", "at": [12, 8], "hp": 4, "atk": 1, "sprite": "cliff-crab", "drops": []},
+        {"id": "cliff-crab-3", "name": "a cliff-crab", "at": [12, 8], "hp": 4, "atk": 1, "sprite": "cliff-crab"},
         {"id": "beach-wisp", "name": "a hush-wisp", "at": [20, 10], "hp": 4, "atk": 1, "sprite": "hush-wisp", "drops": ["gloam-glass"]},
     ],
     "the-weald": [
         {"id": "husk-1", "name": "a weald-husk", "at": [8, 8], "hp": 7, "atk": 2, "sprite": "weald-husk", "drops": ["candle-box"]},
-        {"id": "husk-2", "name": "a weald-husk", "at": [20, 8], "hp": 7, "atk": 2, "sprite": "weald-husk", "drops": []},
+        {"id": "husk-2", "name": "a weald-husk", "at": [20, 8], "hp": 7, "atk": 2, "sprite": "weald-husk"},
         {"id": "husk-3", "name": "a weald-husk", "at": [10, 14], "hp": 7, "atk": 2, "sprite": "weald-husk", "drops": ["honey-biscuit"]},
         {"id": "husk-4", "name": "a weald-husk", "at": [22, 16], "hp": 7, "atk": 2, "sprite": "weald-husk", "drops": ["rope-coil"]},
     ],

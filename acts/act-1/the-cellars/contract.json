@@ -99,8 +99,7 @@
       ],
       "hp": 3,
       "atk": 1,
-      "sprite": "gloam-rat",
-      "drops": []
+      "sprite": "gloam-rat"
     },
     {
       "id": "cellar-rat-3",

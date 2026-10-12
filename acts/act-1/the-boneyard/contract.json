@@ -208,8 +208,7 @@
       ],
       "hp": 4,
       "atk": 1,
-      "sprite": "cliff-crab",
-      "drops": []
+      "sprite": "cliff-crab"
     },
     {
       "id": "cliff-crab-2",
@@ -234,8 +233,7 @@
       ],
       "hp": 4,
       "atk": 1,
-      "sprite": "cliff-crab",
-      "drops": []
+      "sprite": "cliff-crab"
     },
     {
       "id": "beach-wisp",

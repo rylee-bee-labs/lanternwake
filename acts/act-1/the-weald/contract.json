@@ -134,8 +134,7 @@
       ],
       "hp": 7,
       "atk": 2,
-      "sprite": "weald-husk",
-      "drops": []
+      "sprite": "weald-husk"
     },
     {
       "id": "husk-3",

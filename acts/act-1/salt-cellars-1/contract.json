@@ -107,8 +107,7 @@
       ],
       "hp": 4,
       "atk": 1,
-      "sprite": "hush-wisp",
-      "drops": []
+      "sprite": "hush-wisp"
     }
   ],
   "fog": {

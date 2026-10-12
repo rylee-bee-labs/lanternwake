@@ -189,8 +189,7 @@
       ],
       "hp": 3,
       "atk": 1,
-      "sprite": "gloam-rat",
-      "drops": []
+      "sprite": "gloam-rat"
     },
     {
       "id": "causeway-rat-2",
