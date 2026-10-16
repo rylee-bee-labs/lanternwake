@@ -11,13 +11,16 @@ The game is data — a VEFR pack — and this repository is that pack.
 
 ## Is it running?
 
-**UNKNOWN**: the gate was not run here — `uv`, `uvx` and `node` are
-absent and the network is blocked.
+**UNKNOWN** from this document. A previous authoring environment lacked
+`uv`, `uvx`, `node` and network access; that is **historical environment
+evidence**, not an assertion about the machine reading this README now.
 
-The gate is one command from this root; the engine comes from its
-own repository, not a local checkout. Copy the pinned form
-from `.github/workflows/pack-check.yml`. Green means the pack is
-well-formed and current; anything else means it is not.
+The gate runs from this pack root with the **pinned VEFR revision** in
+`.github/workflows/pack-check.yml`, not a local engine checkout. A green
+validation shows the pack passed *that revision's validator at that commit*;
+it does not prove compatibility with newer VEFR, live deployment, physical
+phone playability, or story acceptance. A failed/unrun check needs its own
+evidence, not a claim that the game is broken.
 
 ## How to use it
 
