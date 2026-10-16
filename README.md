@@ -43,3 +43,7 @@ leftover from when the pack sat in `vefr/worlds/lanternwake/`.
 - [`design/GAME-BIBLE.md`](design/GAME-BIBLE.md) — the world and story.
 - [`design/PLAYTEST-LOG.md`](design/PLAYTEST-LOG.md) — verification and gaps.
 - [`design/LIMITATIONS.md`](design/LIMITATIONS.md) — engine seams, unpatched.
+
+## Play-Nice contract pin
+
+The shared behavioral rules are pinned to a reviewed revision in [the adoption manifest](.project/contracts/adoption.yaml). [Contract freshness CI](.github/workflows/contract-freshness.yml) checks that pin against the authoritative Play-Nice source on PRs, pushes and weekly. A valid pin does **not** prove gameplay, runtime health, accessibility acceptance, or a passing `playnice check`; those require their own evidence. [Read the Play-Nice floor](https://github.com/rylee-bee-labs/play-nice-contracts/blob/main/contracts/everyone/FLOOR.md).
