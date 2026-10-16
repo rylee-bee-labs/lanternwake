@@ -37,7 +37,7 @@ env:
 
 jobs:
   secret-scan:
-    uses: rylee-bee-labs/ci-harness/.github/workflows/reusable-secret-scan.yml@1ff61bc1dab41d1d1652b5bc0491722b407d42b7
+    uses: rylee-bee-labs/ci-harness/.github/workflows/reusable-secret-scan.yml@1596539c1e7f0cf43c73bb41e8477cad2cc63d1b
     with:
       fetch-depth: 0
 
