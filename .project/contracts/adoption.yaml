@@ -1,0 +1,34 @@
+# Reviewed new adoption proposal: check pin/currentness in CI; local repo authority remains intact.
+schema: play-nice/adoption-v1
+project: lanternwake
+source:
+  repository: rylee-bee-labs/play-nice-contracts
+  revision: 6669c019412ab8d1d0d9e72b88087dc87c37d145
+freshness:
+  policy: require-current
+  ref: main
+  update: review
+always:
+  - truth-and-evidence
+  - ask-for-help
+  - human-reliability
+  - recovery-and-history
+  - status-and-state
+  - ownership-and-portability
+  - testing-and-evidence
+triggers:
+  agent:
+    - agent-behavior
+    - bounded-work
+    - handoff-and-continuity
+    - contract-proof
+  engineering:
+    - testing-and-evidence
+    - git-and-worktrees
+    - search-before-building
+  human-facing:
+    - accessibility
+    - attention-and-quiet
+    - plain-language
+notes: >-
+  Lanternwake is a VEFR game pack; story/canon and release approval remain the owning game's decisions. Pack validation is not human play acceptance.
