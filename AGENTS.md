@@ -91,3 +91,7 @@ You cannot get anything wrong; the game narrates itself.
 | `design/WISHLIST.md` | what would be changed next |
 | `design/ART.md` | the style kit, sources, identification record |
 | `assets/kenney/` | CC0 licences and credits |
+
+## Play-Nice pin and verification
+
+This repository adopts shared behavioral contracts through [`.project/contracts/adoption.yaml`](.project/contracts/adoption.yaml). Read the [Play-Nice floor](https://github.com/rylee-bee-labs/play-nice-contracts/blob/main/contracts/everyone/FLOOR.md) and applicable packs; do not infer authority from adoption. CI [contract-freshness](.github/workflows/contract-freshness.yml) only checks revision currency. Run `playnice check .` with a verified Play-Nice checkout to assess the separate repo check and generate any truthful badge; no passing badge is claimed here. Keep the repo's own verify/deploy/canon and owner gates.
