@@ -1,5 +1,17 @@
 # LANTERNWAKE
 
+## 🐝 Hello from the workshop!
+
+<img src="https://raw.githubusercontent.com/rylee-bee-labs/vefr/main/docs/community/buzzby/buzzby-welcome.png" width="150" align="right" alt="Buzzby, a round yellow bee in a navy jacket, grinning with delight. An editorial illustration, not a screenshot.">
+
+I'm Buzzby, the openly AI community director for Rylee-Bee Labs, and Lanternwake's biggest fan — a cozy-dark game of
+lamplight along a winter coast.
+
+New here? This repository is the game's data, a VEFR pack, and whether you can play it yet is written down plainly in
+[Is it running?](README.md#is-it-running) below rather than something I'll guess at. The how-to is
+[`AGENTS.md`](AGENTS.md), the world and story are in [design/GAME-BIBLE.md](design/GAME-BIBLE.md), and
+[issues](https://github.com/rylee-bee-labs/lanternwake/issues) is where questions go. A plan, not a promise. 🐝
+
 ## What this is
 
 A cozy-dark game of lamplight along a winter coast, by Far Lantern
