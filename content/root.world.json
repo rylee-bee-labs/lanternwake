@@ -187,9 +187,9 @@
     "the-letter-found": "The hero found Corwin's unsent letter on the deep road.",
     "the-rope-found": "The hero found the drowned bell's rope on the boneyard.",
     "the-entry-found": "The hero found the Master's last entry at the Beacon.",
-    "met-the-master": "The hero met the nameless keeper and heard his name return."
-    ,"heard-toll-yann-first": "The hero first approached Toll-Yann at the Causeway."
-    ,"heard-ferry-first": "The hero first approached the Ferry at the Causeway."
+    "met-the-master": "The hero met the nameless keeper and heard his name return.",
+    "heard-toll-yann-first": "The hero first approached Toll-Yann at the Causeway.",
+    "heard-ferry-first": "The hero first approached Ferrylight Oku at the Causeway."
   },
   "claims": {
     "the-master-fled": { "meaning": "Master Lampwright Corwin Thale fled the coast the night the bell drowned.", "true": false },
@@ -429,7 +429,7 @@
     },
     {
       "id": "causeway-toll-yann-first",
-      "when": { "comes-near": { "who": "toll-yann", "distance": 2 } },
+      "when": { "comes-near": { "who": "toll-yann", "distance": 1 } },
       "if": [ { "flag": "heard-ferry-first", "is": false } ],
       "then": [
         { "set": "heard-toll-yann-first" },
@@ -460,7 +460,7 @@
     },
     {
       "id": "causeway-ferry-first",
-      "when": { "comes-near": { "who": "ferry", "distance": 2 } },
+      "when": { "comes-near": { "who": "the unlit ferry lamp", "distance": 1 } },
       "if": [ { "flag": "heard-toll-yann-first", "is": false } ],
       "then": [
         { "set": "heard-ferry-first" },

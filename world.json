@@ -385,7 +385,7 @@
     "the-entry-found": "The hero found the Master's last entry at the Beacon.",
     "met-the-master": "The hero met the nameless keeper and heard his name return.",
     "heard-toll-yann-first": "The hero first approached Toll-Yann at the Causeway.",
-    "heard-ferry-first": "The hero first approached the Ferry at the Causeway."
+    "heard-ferry-first": "The hero first approached Ferrylight Oku at the Causeway."
   },
   "claims": {
     "the-master-fled": {
@@ -1058,7 +1058,7 @@
       "when": {
         "comes-near": {
           "who": "toll-yann",
-          "distance": 2
+          "distance": 1
         }
       },
       "if": [
@@ -1128,8 +1128,8 @@
       "id": "causeway-ferry-first",
       "when": {
         "comes-near": {
-          "who": "ferry",
-          "distance": 2
+          "who": "the unlit ferry lamp",
+          "distance": 1
         }
       },
       "if": [
