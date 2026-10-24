@@ -189,7 +189,7 @@
     "the-entry-found": "The hero found the Master's last entry at the Beacon.",
     "met-the-master": "The hero met the nameless keeper and heard his name return.",
     "heard-toll-yann-first": "The hero first approached Toll-Yann at the Causeway.",
-    "heard-ferry-first": "The hero first approached Ferrylight Oku at the Causeway."
+    "heard-ferry-first": "The hero first came on the unlit ferry lamp at Saltreach, before meeting Toll-Yann."
   },
   "claims": {
     "the-master-fled": { "meaning": "Master Lampwright Corwin Thale fled the coast the night the bell drowned.", "true": false },
@@ -471,7 +471,7 @@
     {
       "id": "causeway-toll-yann-payoff",
       "when": { "comes-near": { "who": "the unlit ferry lamp", "distance": 1 } },
-      "if": [ { "flag": "heard-toll-yann-first", "is": true } ],
+      "if": [ { "flag": "heard-toll-yann-first", "is": true }, { "flag": "the-ferry-lamp-lit", "is": true } ],
       "then": [
         { "say": "The ferry lamp burns now. Toll-Yann chalks a lamp at the bottom of every page. His account: a light at the slip, and the crossing is open." }
       ]

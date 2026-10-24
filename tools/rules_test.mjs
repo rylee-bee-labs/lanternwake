@@ -122,12 +122,16 @@ for (const [route, firstPoi, otherPoi, expectedFlag, rejectedFlag, rejectedRule]
   check(`${route} stays mutually exclusive`,
         state.flags[expectedFlag] && !state.flags[rejectedFlag] &&
         !out.fired.some(f => f.id === rejectedRule));
+  check(`${route} second approach has no ferry payoff`,
+        !out.actions.some(a => typeof a.say === "string" && a.say.startsWith("The ferry lamp burns now.")));
   state.items["the-evercan"] = true;
   out = engine.run(state, "comes-near", { who: "the unlit ferry lamp", distance: 0 });
   check(`${route} lights the ferry lamp`, state.flags["the-ferry-lamp-lit"] === true,
         out.fired.map(f => f.id).join(","));
   check(`${route} keeps the default lamp line`,
         out.actions.some(a => typeof a.say === "string" && a.say.startsWith("Oil, flint, patience.")));
+  check(`${route} third approach fires the lighting beat`,
+        out.fired.some(f => f.id === "light-the-ferry-lamp"), out.fired.map(f => f.id).join(","));
   check(`${route} payoff is ${expectedFlag === "heard-toll-yann-first" ? "present" : "absent"}`,
         out.actions.some(a => typeof a.say === "string" && a.say.startsWith("The ferry lamp burns now.")) ===
         (expectedFlag === "heard-toll-yann-first"));

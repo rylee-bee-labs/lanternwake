@@ -385,7 +385,7 @@
     "the-entry-found": "The hero found the Master's last entry at the Beacon.",
     "met-the-master": "The hero met the nameless keeper and heard his name return.",
     "heard-toll-yann-first": "The hero first approached Toll-Yann at the Causeway.",
-    "heard-ferry-first": "The hero first approached Ferrylight Oku at the Causeway."
+    "heard-ferry-first": "The hero first came on the unlit ferry lamp at Saltreach, before meeting Toll-Yann."
   },
   "claims": {
     "the-master-fled": {
@@ -1164,6 +1164,10 @@
       "if": [
         {
           "flag": "heard-toll-yann-first",
+          "is": true
+        },
+        {
+          "flag": "the-ferry-lamp-lit",
           "is": true
         }
       ],

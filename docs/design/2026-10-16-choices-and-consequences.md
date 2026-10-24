@@ -99,13 +99,14 @@ to vefr#452 as a limit, never as a patch here.
 
 ## 4. Causeway fork — built as draft
 
-**Option B, at the Causeway.** It is the first place the player must
-decide where to go next (Toll-Yann on the road, Ferry at the slip), it
+**Option B, across the Causeway road and the ferry lamp above Saltreach.** It is the first place the player must
+decide where to go next (Toll-Yann on the Causeway road, or the ferry lamp above Saltreach), it
 sits before the second lamp, and both characters already exist with
 seeds, fragments and sprites. Two branch rules and one payoff rule.
 
 The built fork uses two separate radius-one triggers so either is
-reachable first from the normal entrance. It is recorded as draft in
+reachable first from the normal entrance. Toll-Yann is on the Causeway
+road; the ferry lamp is above Saltreach. It is recorded as draft in
 `content/root.world.json`:
 
 ```
@@ -124,6 +125,7 @@ then: set heard-ferry-first
 # rule 3 — the one demonstrable consequence
 when: comes-near the unlit ferry lamp        (i.e. inside light-the-ferry-lamp's beat)
 if:   flag heard-toll-yann-first is true
+      flag the-ferry-lamp-lit is true
 then: say the draft Toll-Yann account of the lamp
 ```
 
@@ -181,7 +183,7 @@ Proposed evidence, in the order we would run it:
 | Unknown | Why it is unknown here | What would settle it |
 |---|---|---|
 | Whether the pinned Lanternwake build exposes the #192 **Where next?** / **Why?** panels | Answered by Lanternwake#10 against the pinned VEFR source | `rylee-bee-labs/vefr` at `72d366e731f5e4c286269928089cc35da96202f8`, `.github/workflows/pack-check.yml`: `web/player/parts/030-shell.html:205-206`; `web/player/parts/340-where-next-hints.js:70-119`; `web/player/parts/510-rules-closure-surfaces.js:26-58`; `web/player/parts/320-pack-rules.js:93-94,136-143`; `web/player/parts/445-rules-engine.js:369` |
-| Whether `comes-near` mutual exclusion (`flag is false` guards) behaves as read on the woven player | Answered by the two route-order assertions in the manual jsdom harness | `tools/rules_test.mjs`; run with the woven `dist/*.html` as described in §5 |
+| Whether `comes-near` mutual exclusion (`flag is false` guards) behaves as read on the woven player | **OPEN:** the manual jsdom harness exists and asserts both route orders, but has never been run against a build. It requires a woven `dist/*.html` and `jsdom`; CI deliberately excludes it. | Weave a build with pinned VEFR `72d366e731f5e4c286269928089cc35da96202f8`; run `npm i jsdom`; then `node tools/rules_test.mjs <build>` |
 | Whether a *silent* unchosen branch reads as intent or as a bug to a phone player | Requires human play | Exploratory phone session (§5.3) |
 | Measured completionist playtime | Never measured; the 40 hours are a content-ledger target | A full playthrough. Until then: **target** |
 
