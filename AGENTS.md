@@ -11,7 +11,7 @@ does not need to be. The engine is fetched from its own repository (the
 CI pins a commit; see `.github/workflows/pack-check.yml`).
 
 Run everything from the repository root. `norns validate --pack .` is
-the gate, and CI runs it from here.
+the CI gate from here.
 
 ## Layout
 
@@ -39,7 +39,8 @@ Then the gate: `norns validate --pack .` (copy the pinned invocation
 from `.github/workflows/pack-check.yml`).
 
 `tools/playtest.py` (Playwright) and `tools/rules_test.mjs` (jsdom) are
-the manual loop, not CI gates — CI deliberately runs neither.
+manual checks, not CI gates. Run them by hand until the workflow adds
+them.
 
 ## Known stale path
 

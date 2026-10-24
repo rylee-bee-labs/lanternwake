@@ -1,8 +1,9 @@
-// The spine's insurance: load the real woven file in jsdom and fire
+// Manual harness: load the real woven file in jsdom and fire
 // the game's own rules engine with the events of a real playthrough.
 // Proves the story logic - the Evercan, the five lamps, the Beacon's
 // condition - without walking there in a browser.
 //
+// Run by hand until the CI workflow adds this harness.
 //   node tools/rules_test.mjs [path/to/lanternwake-*.html]
 
 import { readFileSync, globSync } from "node:fs";
@@ -100,6 +101,41 @@ check("the Beacon lights on five lamps", state.flags["the-beacon-lit"] === true,
       out.fired.map(f => f.id).join(","));
 check("the Beacon clears the weather",
       out.actions.some(a => a.weather === "clear"));
+
+// Causeway fork: the two named POIs are separate walking triggers. The
+// routes are mutually exclusive; lighting the ferry lamp stays additive.
+function forkState() {
+  return engine.newState({ rules: w.VEFR_RULES, flags: w.VEFR_FLAGS,
+    claims: w.VEFR_CLAIMS, people: w.VEFR_PEOPLE });
+}
+for (const [route, firstPoi, otherPoi, expectedFlag, rejectedFlag, rejectedRule] of [
+  ["Toll-Yann-first", "toll-yann", "the unlit ferry lamp", "heard-toll-yann-first", "heard-ferry-first", "causeway-ferry-first"],
+  ["Ferrylight-Oku-first", "the unlit ferry lamp", "toll-yann", "heard-ferry-first", "heard-toll-yann-first", "causeway-toll-yann-first"],
+]) {
+  state = forkState();
+  out = engine.run(state, "comes-near", { who: firstPoi, distance: 0 });
+  const branchLines = out.actions.filter(a => typeof a.say === "object" && a.say?.who);
+  check(`${route} sets exactly its branch`,
+        state.flags[expectedFlag] && !state.flags[rejectedFlag] &&
+        branchLines.length === 1 && out.fired.filter(f => f.id.startsWith("causeway-") && f.id.endsWith("-first")).length === 1);
+  out = engine.run(state, "comes-near", { who: otherPoi, distance: 0 });
+  check(`${route} stays mutually exclusive`,
+        state.flags[expectedFlag] && !state.flags[rejectedFlag] &&
+        !out.fired.some(f => f.id === rejectedRule));
+  check(`${route} second approach has no ferry payoff`,
+        !out.actions.some(a => typeof a.say === "string" && a.say.startsWith("The ferry lamp burns now.")));
+  state.items["the-evercan"] = true;
+  out = engine.run(state, "comes-near", { who: "the unlit ferry lamp", distance: 0 });
+  check(`${route} lights the ferry lamp`, state.flags["the-ferry-lamp-lit"] === true,
+        out.fired.map(f => f.id).join(","));
+  check(`${route} keeps the default lamp line`,
+        out.actions.some(a => typeof a.say === "string" && a.say.startsWith("Oil, flint, patience.")));
+  check(`${route} third approach fires the lighting beat`,
+        out.fired.some(f => f.id === "light-the-ferry-lamp"), out.fired.map(f => f.id).join(","));
+  check(`${route} payoff is ${expectedFlag === "heard-toll-yann-first" ? "present" : "absent"}`,
+        out.actions.some(a => typeof a.say === "string" && a.say.startsWith("The ferry lamp burns now.")) ===
+        (expectedFlag === "heard-toll-yann-first"));
+}
 
 // 7. evidence moves a belief
 state = engine.newState({ rules: w.VEFR_RULES, flags: w.VEFR_FLAGS,

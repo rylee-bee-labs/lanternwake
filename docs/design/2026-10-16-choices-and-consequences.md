@@ -1,15 +1,17 @@
 # 2026-10-16 — Choices and consequences across the five-lantern journey
 
-**Status: design proposal. Nothing here is canon, code, or approved
-story text.** It is the first step of [lanternwake#8](https://github.com/rylee-bee-labs/lanternwake/issues/8)
+**2026-10-24 — Built as draft:** Lanternwake#10 confirmed the pinned VEFR build ships the "Where next?" and "Why?" panels in [rylee-bee-labs/vefr](https://github.com/rylee-bee-labs/vefr) at `72d366e731f5e4c286269928089cc35da96202f8`, the pin in `.github/workflows/pack-check.yml` (`web/player/parts/030-shell.html:205-206`; `web/player/parts/340-where-next-hints.js:70-119`; `web/player/parts/510-rules-closure-surfaces.js:26-58`; `web/player/parts/320-pack-rules.js:93-94,136-143`; `web/player/parts/445-rules-engine.js:369`). The Causeway fork uses those panels through declared route regions rather than duplicating them. Its three approved player-facing lines are `status: draft` pending Rylee's final read; the fork now lives in the pack as draft. This file remains a design proposal and is not canon.
+
+**Status: design record. The fork is built as draft in the pack; this
+file is not canon, and its player-facing lines remain draft.** It records
+the first step of [lanternwake#8](https://github.com/rylee-bee-labs/lanternwake/issues/8)
 under Rylee's owner ballot of 2026-10-16: gather evidence first, propose
 a small content-only vertical slice with **one demonstrable
 consequence**, then review before canon or wider rollout.
 
-No rule, flag, line, item or map was added, changed or deleted to write
-this file. Every count below was read out of this tree; every claim the
-reader cannot re-derive is marked UNKNOWN with the check that would
-settle it.
+The original proposal predates the draft implementation recorded below.
+Every count below was read out of this tree; unresolved claims are marked
+UNKNOWN with the check that would settle them.
 
 ## 0. What this document is, and is not
 
@@ -17,13 +19,13 @@ It is:
 
 - an inventory of the agency the pack **already** has, by rule id;
 - three bounded options with their trade-offs, priced in rules;
-- one smallest-first prototype proposal, for Rylee to accept or refuse
-  before anyone writes a line of story;
+- the smallest-first draft implementation and its evidence;
 - what we would play to decide whether the prototype is any good.
 
 It is **not**:
 
-- new canon. Every suggested line is marked `PLACEHOLDER — NOT CANON`;
+- new canon. The fork's three approved lines are draft pending the
+  owner's final read;
 - a goal tracker or objective panel (see §2, last bullet);
 - an engine change. The engine is never patched for this game; gaps go
   to [vefr#452](https://github.com/rylee-bee-labs/vefr/issues/452).
@@ -50,13 +52,10 @@ buy a consequence, because the mechanic needs no engine help and no new
 place for the player to go.
 
 **A second free lever, found by reading the rule shape rather than the
-story:** rules are `once: true` by default (L3), and a rule's `if`
-accepts `{"flag": "x", "is": false}`. Two `comes-near` rules at two POIs
-in the same region, each guarded by *the other* flag being false, are
-**mutually exclusive in first-approach order**: walk to A first and B's
-rule never fires. Read from the schema and from the pack's own
-`if`/`flag` usage; **not yet run on the woven player** (no `norns`,
-no `node`, no woven `dist/` in this sandbox — see §7).
+story:** the two `comes-near` rules are tied to Toll-Yann and the ferry
+lamp, each with radius one, and each checks the other flag is false.
+Walking up to either trigger first sets one branch and excludes the other.
+The manual jsdom harness exercises both orders (see §5 and §7).
 
 ## 2. What the pack cannot do, so nothing here is designed around air
 
@@ -68,23 +67,18 @@ no `node`, no woven `dist/` in this sandbox — see §7).
 | `RULE_SAY_LIMIT` 280 characters | Payoff lines must be short. A consequence is one line, not a scene. | L12 |
 | **`the 40-rule budget is full.`** `world.json` carries 40 rules today; `CONTENT-PLAN.md` reserves 3 inside that 40 | Anything a choice costs must be **reclaimed**, or it does not land. See §4. | this tree |
 
-Of the 40 rules, **10 are unconditional and `say`-only**
-(`marta-welcome`, `causeway-tide`, `guildhall-ruin`, `whale-fall`,
-`barrow-door`, `sea-cave`, `pip-calls`, `ferry-sings`, `ash-hints`,
-`sef-sings`). Each of those people or places already speaks four phase
-seeds from `content/speakers.json` — so reclaiming a rule costs one
-authored line, not a character.
+Of the 40 rules, **7 are unconditional and `say`-only**
+(`marta-welcome`, `causeway-tide`, `whale-fall`, `barrow-door`,
+`sea-cave`, `ash-hints`, `sef-sings`). Each of those people or places
+already speaks four phase seeds from `content/speakers.json` — so the
+three retired rules cost authored lines, not characters.
 
-**Shipped-capability caution (from the issue, and it binds this doc).**
-VEFR's first-independent-pack findings say a player-facing **Where
-next?** panel (#192) and a **Why?** panel landed in the engine after
-this game's wishlist was written. Whether the *pinned* Lanternwake
-build consumes them is **UNKNOWN here** — this sandbox has no `norns`
-and no engine checkout, and [lanternwake#10](https://github.com/rylee-bee-labs/lanternwake/issues/10)
-owns that check. Therefore: **this proposal adds no objective list, no
-goal HUD and no "what I owe" panel.** If the panel is live in the pinned
-build, the fork below is read *through* it for free; if it is not, the
-fork is still legible because both branches speak.
+**Shipped-capability check:** Lanternwake#10 confirmed that the pinned
+build at `72d366e731f5e4c286269928089cc35da96202f8` in
+[`rylee-bee-labs/vefr`](https://github.com/rylee-bee-labs/vefr), pinned by
+`.github/workflows/pack-check.yml`, ships the player-facing **Where
+next?** and **Why?** panels. The Causeway fork is legible through those
+panels, and both branches speak.
 
 ## 3. Three bounded options, priced
 
@@ -103,55 +97,57 @@ fork is still legible because both branches speak.
 the rope) is the most satisfying shape and is impossible — L7. It goes
 to vefr#452 as a limit, never as a patch here.
 
-## 4. Smallest first prototype — proposal for owner review
+## 4. Causeway fork — built as draft
 
-**Option B, at the Causeway.** It is the first place the player must
-decide where to go next (Toll-Yann on the road, Ferry at the slip), it
+**Option B, across the Causeway road and the ferry lamp above Saltreach.** It is the first place the player must
+decide where to go next (Toll-Yann on the Causeway road, or the ferry lamp above Saltreach), it
 sits before the second lamp, and both characters already exist with
 seeds, fragments and sprites. Two branch rules and one payoff rule.
 
-Shape, in pack vocabulary only (`when` / `if` / `then` as they exist in
-`content/root.world.json` today):
+The built fork uses two separate radius-one triggers so either is
+reachable first from the normal entrance. Toll-Yann is on the Causeway
+road; the ferry lamp is above Saltreach. It is recorded as draft in
+`content/root.world.json`:
 
 ```
 # rule 1 — the toll-keeper first
-when: comes-near toll-yann
+when: comes-near toll-yann (distance 1)
 if:   flag heard-ferry-first is false
 then: set heard-toll-yann-first
-      say {who: toll-yann, line: PLACEHOLDER — NOT CANON}
+      say the approved draft Toll-Yann line
 
 # rule 2 — the crossing boy first
-when: comes-near ferry
+when: comes-near the unlit ferry lamp (distance 1)
 if:   flag heard-toll-yann-first is false
 then: set heard-ferry-first
-      say {who: ferry, line: PLACEHOLDER — NOT CANON}
+      say the approved draft Ferrylight Oku line
 
 # rule 3 — the one demonstrable consequence
 when: comes-near the unlit ferry lamp        (i.e. inside light-the-ferry-lamp's beat)
 if:   flag heard-toll-yann-first is true
-then: say PLACEHOLDER — NOT CANON              # Toll-Yann's account of the lamp instead of the default line
+      flag the-ferry-lamp-lit is true
+then: say the draft Toll-Yann account of the lamp
 ```
 
 Plus two flag declarations in `content/root.world.json`:
 `heard-toll-yann-first`, `heard-ferry-first`.
 
-**Budget arithmetic, so this is not a promise the CI will break:**
+**Budget arithmetic:**
 
-- 3 rules spent, 3 reclaimed from the unconditional say-only ten
-  (recommend `pip-calls`, `ferry-sings`, `ash-hints` — all three
-  characters keep their four phase seeds; the reclaimed text is three
-  authored lines).
+- 3 rules spent, 3 reclaimed from unconditional say-only rules:
+  `ferry-sings`, `pip-calls`, and `guildhall-ruin`. `ash-hints` remains
+  live; the characters retain their phase seeds.
 - 40 − 3 + 3 = **40**. Net zero against `maplab.RULE_LIMIT`.
 
-**Deliberately left out of v1 of the prototype:** the return-visit
+**Deliberately left out of this draft:** the return-visit
 half. A second visit to Toll-Yann needs a *second* rule instance
 because rules fire once (L3), so the return payoff is the next
 increment (+2 rules, and two more reclaimed lines), not this one. The
 prototype's whole claim is that one consequence is legible; if it is
 not, the return-visit work is the wrong thing to build on top of it.
 
-**What is NOT canon in this sketch:** every line of player-facing text
-above. Writing them is Rylee's call, not this document's.
+The three approved lines in the pack remain draft pending Rylee's final
+read. This design file is not canon.
 
 ## 5. How we would know whether it worked
 
@@ -168,10 +164,10 @@ Proposed evidence, in the order we would run it:
 3. **Phone and desktop, exploratory, with notes** — not rules-engine
    tests. The silent branch is exactly the thing that reads as a bug on
    a small screen; that has to be watched, not asserted.
-4. **Rules-harness assertions** (jsdom, `tools/rules_test.mjs`): mutual
-   exclusion holds; the payoff rule fires only on the gated route.
-   Needs a woven `dist/*.html`; this sandbox has neither `node` nor a
-   weave, so this check is written here and not yet run (§7).
+4. **Rules-harness assertions** (jsdom, `tools/rules_test.mjs`): both
+   orders set exactly one branch, only the Toll-Yann route gets the
+   payoff, and the default ferry-lamp rule still lights the lamp on both
+   routes. Run by hand with a woven `dist/*.html`.
 5. **Duration wording.** The ~40 hours stays a **design target** from
    `CONTENT-PLAN.md` and is **not measured** (`PLAYTEST-LOG.md`, "Honest
    gaps"). No document produced from this line may state it as a
@@ -179,22 +175,15 @@ Proposed evidence, in the order we would run it:
 
 ## 6. What Rylee has to decide before anything lands
 
-1. Approve or refuse the Causeway fork as the vertical slice (§4).
-2. Approve any player-facing line before it is written into
-   `content/` — canon is the owner's, per the ballot.
-3. Agree that reclaiming `pip-calls`, `ferry-sings`, `ash-hints` is an
-   acceptable trade for three choice rules.
-4. Confirm the #10 result first: if the pinned build ships a usable
-   "Where next?" panel, the fork should be tuned against it rather
-   than around it.
-5. Keep engine limits in vefr#452 — no engine patch from this repo.
+1. Give the three draft player-facing lines a final read before canon.
+2. Keep engine limits in vefr#452 — no engine patch from this repo.
 
 ## 7. UNKNOWNs at time of writing
 
 | Unknown | Why it is unknown here | What would settle it |
 |---|---|---|
-| Whether the pinned Lanternwake build exposes the #192 **Where next?** / **Why?** panels | No `norns`, no VEFR checkout in this sandbox; the pack's own AGENTS.md pins the engine at CI time only | #10, against the pinned build |
-| Whether `comes-near` mutual exclusion (`flag is false` guards) behaves as read on the woven player | The schema supports it and this pack uses both shapes, but no woven file exists here and neither `node` nor a `dist/` build is available | Two jsdom assertions in `tools/rules_test.mjs` after a weave |
+| Whether the pinned Lanternwake build exposes the #192 **Where next?** / **Why?** panels | Answered by Lanternwake#10 against the pinned VEFR source | `rylee-bee-labs/vefr` at `72d366e731f5e4c286269928089cc35da96202f8`, `.github/workflows/pack-check.yml`: `web/player/parts/030-shell.html:205-206`; `web/player/parts/340-where-next-hints.js:70-119`; `web/player/parts/510-rules-closure-surfaces.js:26-58`; `web/player/parts/320-pack-rules.js:93-94,136-143`; `web/player/parts/445-rules-engine.js:369` |
+| Whether `comes-near` mutual exclusion (`flag is false` guards) behaves as read on the woven player | **OPEN:** the manual jsdom harness exists and asserts both route orders, but has never been run against a build. It requires a woven `dist/*.html` and `jsdom`; CI deliberately excludes it. | Weave a build with pinned VEFR `72d366e731f5e4c286269928089cc35da96202f8`; run `npm i jsdom`; then `node tools/rules_test.mjs <build>` |
 | Whether a *silent* unchosen branch reads as intent or as a bug to a phone player | Requires human play | Exploratory phone session (§5.3) |
 | Measured completionist playtime | Never measured; the 40 hours are a content-ledger target | A full playthrough. Until then: **target** |
 
@@ -206,5 +195,5 @@ Proposed evidence, in the order we would run it:
   `design/PLAYTEST-LOG.md`, `design/LIMITATIONS.md`, `AGENTS.md`.
 - Local gate run for this file: `python3 tools/build_pack.py --check` —
   green (10 hand regions ok). `norns validate --pack .` could not be
-  run in this sandbox (no `norns`); CI runs it at the pinned VEFR SHA.
-- This file is proposal-only: no canon, no code, no rule, no flag.
+  run in this sandbox (no `norns`); CI runs only `norns validate --pack .`.
+- The fork is built as draft in the pack. This file remains non-canon.

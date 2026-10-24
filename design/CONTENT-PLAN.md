@@ -67,7 +67,8 @@ the forty.
 | POI reveals + gifts | 6 | `comes-near` |
 | Town reactivity (Moss, the cat; the twins; the ghost) | 5 | `comes-near` |
 | The finale + farewell | 5 | `comes-near`, `starts` |
-| Reserve | 3 | — |
+| Causeway fork | 3 | `comes-near` |
+| Reserve | 0 | — |
 
 Order matters: rules run in the order written. `once: true` is the
 default and is kept everywhere — every rule is a single beat.
