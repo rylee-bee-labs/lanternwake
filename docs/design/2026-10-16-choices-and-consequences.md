@@ -1,5 +1,7 @@
 # 2026-10-16 — Choices and consequences across the five-lantern journey
 
+**2026-10-24 — Built:** Lanternwake#10 confirmed the pinned VEFR build ships the "Where next?" and "Why?" panels (`web/player/parts/030-shell.html:205-206`; `340-where-next-hints.js:70-119`; `510-rules-closure-surfaces.js:26-58`; `320-pack-rules.js:93-94,136-143`; `445-rules-engine.js:369`). The Causeway fork uses those panels through declared route regions rather than duplicating them. Its three approved player-facing lines are `status: draft` pending Rylee's final read; the fork now lives in the pack.
+
 **Status: design proposal. Nothing here is canon, code, or approved
 story text.** It is the first step of [lanternwake#8](https://github.com/rylee-bee-labs/lanternwake/issues/8)
 under Rylee's owner ballot of 2026-10-16: gather evidence first, propose

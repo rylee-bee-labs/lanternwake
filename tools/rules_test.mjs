@@ -101,6 +101,35 @@ check("the Beacon lights on five lamps", state.flags["the-beacon-lit"] === true,
 check("the Beacon clears the weather",
       out.actions.some(a => a.weather === "clear"));
 
+// Causeway fork: first approach closes the other branch; only the
+// Toll-Yann route earns the additive ferry-lamp account.
+function forkState() {
+  return engine.newState({ rules: w.VEFR_RULES, flags: w.VEFR_FLAGS,
+    claims: w.VEFR_CLAIMS, people: w.VEFR_PEOPLE });
+}
+state = forkState();
+engine.run(state, "comes-near", { who: "toll-yann", distance: 2 });
+out = engine.run(state, "comes-near", { who: "ferry", distance: 2 });
+check("Toll-Yann-first closes the Ferry-first branch",
+      state.flags["heard-toll-yann-first"] && !state.flags["heard-ferry-first"] &&
+      !out.fired.some(f => f.id === "causeway-ferry-first"));
+state = forkState();
+engine.run(state, "comes-near", { who: "ferry", distance: 2 });
+out = engine.run(state, "comes-near", { who: "toll-yann", distance: 2 });
+check("Ferry-first closes the Toll-Yann-first branch",
+      state.flags["heard-ferry-first"] && !state.flags["heard-toll-yann-first"] &&
+      !out.fired.some(f => f.id === "causeway-toll-yann-first"));
+state = forkState();
+state.flags["heard-toll-yann-first"] = true;
+out = engine.run(state, "comes-near", { who: "the unlit ferry lamp", distance: 1 });
+check("the lamp payoff fires after Toll-Yann-first",
+      out.actions.some(a => typeof a.say === "string" && a.say.startsWith("The ferry lamp burns now.")));
+state = forkState();
+state.flags["heard-ferry-first"] = true;
+out = engine.run(state, "comes-near", { who: "the unlit ferry lamp", distance: 1 });
+check("the lamp payoff stays silent after Ferry-first",
+      !out.actions.some(a => typeof a.say === "string" && a.say.startsWith("The ferry lamp burns now.")));
+
 // 7. evidence moves a belief
 state = engine.newState({ rules: w.VEFR_RULES, flags: w.VEFR_FLAGS,
   claims: w.VEFR_CLAIMS, people: w.VEFR_PEOPLE });

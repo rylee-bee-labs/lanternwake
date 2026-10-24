@@ -383,7 +383,9 @@
     "the-letter-found": "The hero found Corwin's unsent letter on the deep road.",
     "the-rope-found": "The hero found the drowned bell's rope on the boneyard.",
     "the-entry-found": "The hero found the Master's last entry at the Beacon.",
-    "met-the-master": "The hero met the nameless keeper and heard his name return."
+    "met-the-master": "The hero met the nameless keeper and heard his name return.",
+    "heard-toll-yann-first": "The hero first approached Toll-Yann at the Causeway.",
+    "heard-ferry-first": "The hero first approached the Ferry at the Causeway."
   },
   "claims": {
     "the-master-fled": {
@@ -1052,16 +1054,31 @@
       ]
     },
     {
-      "id": "guildhall-ruin",
+      "id": "causeway-toll-yann-first",
       "when": {
         "comes-near": {
-          "who": "the Guildhall ruin",
-          "distance": 1
+          "who": "toll-yann",
+          "distance": 2
         }
       },
+      "if": [
+        {
+          "flag": "heard-ferry-first",
+          "is": false
+        }
+      ],
       "then": [
         {
-          "say": "The Guildhall's burned bones. Among the charcoal: the shape of a desk, a forge, a life's work. Rebuilding starts with one lamp."
+          "set": "heard-toll-yann-first"
+        },
+        {
+          "say": {
+            "who": "toll-yann",
+            "line": "You carry the can. Then you keep the lamps. The boy at the crossing knows the water; I keep the count. Your name is not in my book yet."
+          }
+        },
+        {
+          "point-to": "saltreach"
         }
       ]
     },
@@ -1108,36 +1125,51 @@
       ]
     },
     {
-      "id": "pip-calls",
-      "when": {
-        "comes-near": {
-          "who": "pip",
-          "distance": 2
-        }
-      },
-      "then": [
-        {
-          "say": {
-            "who": "pip",
-            "line": "You carry the can! Then you are the lampwright. The real one! I will tell everyone. EVERYONE."
-          }
-        }
-      ]
-    },
-    {
-      "id": "ferry-sings",
+      "id": "causeway-ferry-first",
       "when": {
         "comes-near": {
           "who": "ferry",
           "distance": 2
         }
       },
+      "if": [
+        {
+          "flag": "heard-toll-yann-first",
+          "is": false
+        }
+      ],
       "then": [
+        {
+          "set": "heard-ferry-first"
+        },
         {
           "say": {
             "who": "ferry",
-            "line": "The bell sings under the water. I hear it when I pole quiet. It is not a sad song."
+            "line": "Quiet pole, quiet water. The water talks first. The lamp at the slip is the crossing, and the toll-keeper keeps the account of every one."
           }
+        },
+        {
+          "point-to": "gullwatch"
+        }
+      ]
+    },
+    {
+      "id": "causeway-toll-yann-payoff",
+      "when": {
+        "comes-near": {
+          "who": "the unlit ferry lamp",
+          "distance": 1
+        }
+      },
+      "if": [
+        {
+          "flag": "heard-toll-yann-first",
+          "is": true
+        }
+      ],
+      "then": [
+        {
+          "say": "The ferry lamp burns now. Toll-Yann chalks a lamp at the bottom of every page. His account: a light at the slip, and the crossing is open."
         }
       ]
     },
