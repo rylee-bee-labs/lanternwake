@@ -13,6 +13,10 @@ CI pins a commit; see `.github/workflows/pack-check.yml`).
 Run everything from the repository root. `norns validate --pack .` is
 the CI gate from here.
 
+**Its job (Rylee, 2026-10-30): VEFR's expansion game.** When Lanternwake needs something the engine lacks,
+build it in VEFR as a general ability that any pack can use (as Lamplight was, vefr#587), not as a
+Lanternwake-only special case. Findings about VEFR's promises go to VEFR as issues.
+
 ## Layout
 
 | Path | What it is |
