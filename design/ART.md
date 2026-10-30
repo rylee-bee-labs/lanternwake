@@ -79,5 +79,5 @@ made by `art/tools/build_normals.py` with lab-kit `normals --from-light 1
 scratches snow and ice.
 
 Sprites have no normal maps yet. VEFR lights people with the ground.
-The look waits on Rylee's check of a private preview (screenshots of the
-woven game). This PR stays a draft until she answers.
+Rylee checked the look on a private preview (screenshots of the woven
+game) and answered "Looks right" (Project Home card #367, 2026-10-30).
