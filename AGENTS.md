@@ -42,6 +42,15 @@ from `.github/workflows/pack-check.yml`).
 manual checks, not CI gates. Run them by hand until the workflow adds
 them.
 
+## Publishing a build
+
+`bin/publish-build.sh` weaves this pack into one offline HTML file with a VEFR checkout (`VEFR_DIR`,
+default `~/code/Rylee-Bee/vefr`) and posts it to the dev gallery as project `lanternwake`, named for
+the HEAD short sha. The VEFR checkout must contain the pack's own pin (`VEFR_REF` in
+`.github/workflows/pack-check.yml`) or the script stops. `--dry-run` weaves and records the engine and
+pack revisions in `build-info.txt` but posts nothing. A coordinator publishes merged main only, with
+`~/.agents/bin/publish-build lanternwake`.
+
 ## Known stale path
 
 `tools/playtest.py` computes its build directory as
