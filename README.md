@@ -49,7 +49,19 @@ night the bell drowned.
 
 The game is data — a VEFR pack — and this repository is that pack.
 
+**Its job in the studio (Rylee, 2026-10-30):** Lanternwake is VEFR's *expansion game*. It is the outside
+pack that keeps the engine honest and teaches it new abilities. On 2026-10-02 it was VEFR's first independent
+pack, built without patching the engine, and its findings became contract fixes
+([vefr 0b1c306](https://github.com/rylee-bee-labs/vefr/commit/0b1c306c)). On 2026-10-29 it brought
+Lamplight into VEFR ([vefr#587](https://github.com/rylee-bee-labs/vefr/pull/587)). Cottage teaches VEFR to be an
+RPG; Lanternwake teaches it atmosphere and journeys.
+
 ## Is it running?
+
+**Observed 2026-10-30:** a build of this pack at 9a9e99f (VEFR 7ce107fe) was published with
+`bin/publish-build.sh` to <https://gallery.hulganfamily.duckdns.org/lanternwake/builds/2026-10-30-9a9e99f/>. It
+loaded in headless Chromium (HTTP 200, no page errors), and the hero walked and opened the first book. That is an
+agent's check, not a real-phone or story-acceptance check.
 
 **UNKNOWN** from this document. A previous authoring environment lacked
 `uv`, `uvx`, `node` and network access; that is **historical environment
