@@ -174,6 +174,18 @@
       "noun": ["Stair", "Cellar", "Vault", "Passage", "Barrow", "Mile", "Chamber", "Road"]
     }
   },
+  "light": {
+    "stand": { "stone-wall": 1, "dark-wall": 1, "cabin-wall": 1, "timber-wall": 1, "rock": 1, "crate": 1 },
+    "ambient": { "dusk": "#33334c", "moonrise": "#242945", "deep-night": "#141729", "first-light": "#6b6670" },
+    "hero": { "reach": 1.9, "height": 1.3, "intensity": 2, "color": "#ffd694" },
+    "lamps": {
+      "the-causeway": [ { "at": [18, 6], "flag": "the-causeway-lamp-lit" } ],
+      "saltreach": [ { "at": [15, 16], "flag": "the-ferry-lamp-lit" } ],
+      "gullwatch": [ { "at": [27, 9], "flag": "the-cliff-lamp-lit" } ],
+      "the-weald": [ { "at": [21, 14], "flag": "the-weald-lamp-lit" } ],
+      "the-chapel": [ { "at": [15, 5], "flag": "the-chapel-lamp-lit" } ]
+    }
+  },
   "flags": {
     "moss-noticed": "Moss the cat has looked up at the hero once.",
     "the-causeway-lamp-lit": "The Great Lamp on Toll Rock burns again.",

@@ -33,7 +33,7 @@ concurrency:
 
 env:
   # The VEFR commit this pack is validated against.
-  VEFR_REF: 72d366e731f5e4c286269928089cc35da96202f8
+  VEFR_REF: 715af9be8714b826006e849173d826a644771720
 
 jobs:
   secret-scan:

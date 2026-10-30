@@ -53,6 +53,7 @@ chests, shells - one icon per catalog entry.
 
 ```
 art/tools/build_art.py    sources -> tiles/, sprites/, assets/
+art/tools/build_normals.py  tiles -> <tile>.normal.png, for Lamplight (run after build_art.py)
 art/tools/mock_scene.py   a mock room at 32px + a named contact sheet
 tools/playtest.py         screenshots of the real build (also art review)
 ```
@@ -60,3 +61,23 @@ tools/playtest.py         screenshots of the real build (also art review)
 The loop the studio teaches: proof, pick, bulk, process, **see it in
 the game**, keep the record. The mock room and the in-game screenshots
 are the sees; this file and `assets/kenney/README.md` are the record.
+
+## Lamplight (2026-10-30)
+
+The coast is lit by VEFR's Lamplight: the `light` block in `content/root.world.json`
+(and so `world.json`). It sets:
+
+- the dark of each watch;
+- the Evercan's glow, held beside the hero;
+- the five Great Lamps, each shining once its rule sets
+  `the-<lamp>-lamp-lit`;
+- walls, rock and crates standing a tile tall to cast shadows.
+
+Every tile has a normal map beside it for relief: `<tile>.normal.png`,
+made by `art/tools/build_normals.py` with lab-kit `normals --from-light 1
+--strength 1`. That is the light-rig spike's tile setting. Full strength
+scratches snow and ice.
+
+Sprites have no normal maps yet. VEFR lights people with the ground.
+The look waits on Rylee's check of a private preview (screenshots of the
+woven game). This PR stays a draft until she answers.
