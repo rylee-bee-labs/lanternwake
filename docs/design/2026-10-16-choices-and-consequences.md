@@ -1,9 +1,9 @@
 # 2026-10-16 — Choices and consequences across the five-lantern journey
 
-**2026-10-24 — Built as draft:** Lanternwake#10 confirmed the pinned VEFR build ships the "Where next?" and "Why?" panels in [rylee-bee-labs/vefr](https://github.com/rylee-bee-labs/vefr) at `72d366e731f5e4c286269928089cc35da96202f8`, the pin in `.github/workflows/pack-check.yml` (`web/player/parts/030-shell.html:205-206`; `web/player/parts/340-where-next-hints.js:70-119`; `web/player/parts/510-rules-closure-surfaces.js:26-58`; `web/player/parts/320-pack-rules.js:93-94,136-143`; `web/player/parts/445-rules-engine.js:369`). The Causeway fork uses those panels through declared route regions rather than duplicating them. Its three approved player-facing lines are `status: draft` pending Rylee's final read; the fork now lives in the pack as draft. This file remains a design proposal and is not canon.
+**2026-10-24 — Built (lines still draft):** Lanternwake#10 confirmed the pinned VEFR build ships the "Where next?" and "Why?" panels in [rylee-bee-labs/vefr](https://github.com/rylee-bee-labs/vefr) at `72d366e731f5e4c286269928089cc35da96202f8`, the pin in `.github/workflows/pack-check.yml` (`web/player/parts/030-shell.html:205-206`; `web/player/parts/340-where-next-hints.js:70-119`; `web/player/parts/510-rules-closure-surfaces.js:26-58`; `web/player/parts/320-pack-rules.js:93-94,136-143`; `web/player/parts/445-rules-engine.js:369`). The Causeway fork uses those panels through declared route regions rather than duplicating them. Its three approved player-facing lines are draft pending Rylee's final read (the pack format has no draft marker, so the status is recorded here and in PR #36, not in the pack); the fork itself now lives in the pack. This file remains a design proposal and is not canon.
 
-**Status: design record. The fork is built as draft in the pack; this
-file is not canon, and its player-facing lines remain draft.** It records
+**Status: design record. The fork is built in the pack; this file is not
+canon, and its player-facing lines remain draft (recorded here, not in the pack).** It records
 the first step of [lanternwake#8](https://github.com/rylee-bee-labs/lanternwake/issues/8)
 under Rylee's owner ballot of 2026-10-16: gather evidence first, propose
 a small content-only vertical slice with **one demonstrable
@@ -97,7 +97,7 @@ panels, and both branches speak.
 the rope) is the most satisfying shape and is impossible — L7. It goes
 to vefr#452 as a limit, never as a patch here.
 
-## 4. Causeway fork — built as draft
+## 4. Causeway fork — built; its lines are draft
 
 **Option B, across the Causeway road and the ferry lamp above Saltreach.** It is the first place the player must
 decide where to go next (Toll-Yann on the Causeway road, or the ferry lamp above Saltreach), it
@@ -106,8 +106,8 @@ seeds, fragments and sprites. Two branch rules and one payoff rule.
 
 The built fork uses two separate radius-one triggers so either is
 reachable first from the normal entrance. Toll-Yann is on the Causeway
-road; the ferry lamp is above Saltreach. It is recorded as draft in
-`content/root.world.json`:
+road; the ferry lamp is above Saltreach. It is built in
+`content/root.world.json` (its lines' draft status is recorded here, not in the pack):
 
 ```
 # rule 1 — the toll-keeper first
@@ -146,7 +146,7 @@ increment (+2 rules, and two more reclaimed lines), not this one. The
 prototype's whole claim is that one consequence is legible; if it is
 not, the return-visit work is the wrong thing to build on top of it.
 
-The three approved lines in the pack remain draft pending Rylee's final
+The three approved lines in the pack remain draft (recorded here) pending Rylee's final
 read. This design file is not canon.
 
 ## 5. How we would know whether it worked
@@ -196,4 +196,4 @@ Proposed evidence, in the order we would run it:
 - Local gate run for this file: `python3 tools/build_pack.py --check` —
   green (10 hand regions ok). `norns validate --pack .` could not be
   run in this sandbox (no `norns`); CI runs only `norns validate --pack .`.
-- The fork is built as draft in the pack. This file remains non-canon.
+- The fork is built in the pack; its lines' draft status is recorded here. This file remains non-canon.
