@@ -1,9 +1,8 @@
 # AGENTS.md: Lanternwake
 
 Lanternwake is VEFR's expansion game (Rylee, 2026-10-30): a cozy-dark game of lamplight along a winter coast.
-It is a VEFR pack (data, not a program); this repo root is the pack. Public repo. Not an engine. When it needs
-something the engine lacks, build it in VEFR as a general ability any pack can use (as Lamplight was, vefr#587),
-not as a Lanternwake-only case. Findings about VEFR's promises go to VEFR as issues.
+A VEFR pack (data, not a program); this repo root is the pack. Public repo. Not an engine. When it needs something
+the engine lacks, build it in VEFR as a general ability any pack can use (vefr#587), not as a special case.
 
 ## Run it
 
@@ -29,8 +28,8 @@ uvx --no-progress --from "vefr @ git+https://github.com/rylee-bee-labs/vefr@$REF
 ## Git and merge
 
 - One topic per branch and PR; never commit to `main` or force-push. The bot (`rylee-bee-agents[bot]`) authors, never Rylee.
-- Trailers by role: a Claude session or coordinator ends each commit with `Model: <provider:model>` and never
-  `Co-Authored-By: Claude Code`. An offload worker writes none; the hook stamps it.
+- Trailers: Claude sessions and coordinators end commits with `Model: <provider:model>`, never `Co-Authored-By:
+  Claude Code`. An offload worker writes none; the hook stamps it.
 - Merge = green CI plus an independent review, then GitHub auto-merge. Do not merge by hand.
 - No deploy. A coordinator publishes merged `main` to the dev gallery (see the reference).
 - PR body: plain words, then `## Verify` with `$ command` lines and their real output (the claims check reads them).

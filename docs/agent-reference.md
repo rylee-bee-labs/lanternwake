@@ -2,6 +2,12 @@
 
 Detail moved out of `AGENTS.md`. Nothing here overrides it.
 
+## Its job
+
+**Its job (Rylee, 2026-10-30): VEFR's expansion game.** When Lanternwake needs something the engine lacks,
+build it in VEFR as a general ability that any pack can use (as Lamplight was, vefr#587), not as a
+Lanternwake-only special case. Findings about VEFR's promises go to VEFR as issues.
+
 ## Layout
 
 | Path | What it is |
